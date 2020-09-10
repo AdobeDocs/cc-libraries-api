@@ -1,5 +1,5 @@
 ---
-title: OpenAPI - Adobe Analytics
-description: This is the OpenAPI page of Adobe Analytics
-openAPISpec: https://raw.githubusercontent.com/AdobeDocs/analytics-2.0-apis/master/docs/swagger.json  
---- 
+title: OpenAPI - CC Libraries API
+description: This is the OpenAPI page for CC Libraries API
+openAPISpec: https://raw.githubusercontent.com/cc-libraries-api/open-api/master/openapi.json
+---

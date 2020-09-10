@@ -1,86 +1,114 @@
 ---
-title: Overview - Adobe Analytics
-description: This is the overview page of Adobe Analytics
-contributors:
-  - https://github.com/simonwex 
+title: Overview - CC Libraries API
+description: This is the overview page of CC Libraries API
 ---
 
 <Hero slots="image, heading, text" background="rgb(64, 34, 138)"/>
 
-![Hero image](./illustration.png) 
+![Hero image](./illustration.png)
 
-# Adobe Analytics 
+# CC Libraries API
 
-Adobe Product API offers limitless ways to integrate your most important customer data into key business processes. Adobe Product API offer limitless ways.
+CC Libraries are accessible across all of Adobe's tools and offer a powerful way to organize logos, colors, and other assets so they can be easily accessed and re-used. The CC Libraries API lets you bring Libraries to your products and services.
 
 <Resources slots="heading, links"/>
 
 #### Resources
 
-* [Quickstart Guide](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
-* [Adobe Analytics Github Repo](https://github.com/AdobeDocs/analytics-2.0-apis)
+- [Code samples repo](https://github.com/cc-libraries-api/code-samples)
+- [Postman collection](https://github.com/cc-libraries-api/api-docs/blob/master/adobe_cc_libraries_apis.postman_collection.json)
+- [CC Libraries GitHub org](https://github.com/cc-libraries-api)
+- [CC Libraries Documentation repo](https://github.com/AdobeDocs/cc-libraries-api)
 
 ## Overview
 
-This documentation provides instructions for Adobe Analytics 2.0 APIs. For working with Analytics 1.4 APIs, see [Analytics 1.4 API Documentation](https://github.com/AdobeDocs/analytics-1.4-apis).
+Welcome to the CC Libraries API documentation! Here you can learn all about CC Libraries, read development guides, explore endpont references, and find tools and sample code.
 
-The Adobe Analytics APIs are a collection of APIs that power Adobe Analytics products like Analysis Workspace. 
-The APIs allow for the creation of data rich user interfaces that you can use to manipulate and integrate data.
-You can also create reports to explore, get insights, or answer important questions about your data.
+## Integrate
 
-## Discover 
+<DiscoverBlock slots="heading, link, text"/>
 
-<DiscoverBlock width="100%" slots="heading, link, text"/>
+### Orientation to CC Libraries
 
-### Get Started
+[What are CC Libraries?]()
 
-[Quickstart Guide](guides/)
-    
-Get started with the Adobe Analytics APIs.
+If you're new to CC Libraries, get started by having a look at this service from the user perspective.
 
-<DiscoverBlock slots="heading, link, text"/> 
+<DiscoverBlock slots="link, text"/>
+
+[What can I do with this API?]()
+
+A high-level introduction to key features this API supports.
+
+<DiscoverBlock slots="heading, link, text"/>
+
+### Setup
+
+[How to get your developer credentials]()
+
+Before you get started, you'll need a Client ID and Secret. We'll show you how to get them on the Adobe Developer Console.
+
+<DiscoverBlock slots="link, text"/>
+
+[How to get access tokens with OAuth]()
+
+See where to learn more about Adobe OAuth 2.0 and try our OAuth 2.0 Playground for a quicker start.
+
+<DiscoverBlock slots="heading, link, text"/>
+
+### Tutorials
+
+[Quick Start with cURL]()
+
+Make your first API call via the cURL command-line tool.
+
+<DiscoverBlock slots="link, text"/>
+
+[Quick Start with Node.js]()
+
+Make your first API call from a Node.js script.
+
+<DiscoverBlock slots="heading, link, text"/>
 
 ### Guides
 
-[Calculated Metrics API](guides/calculated_metrics_api/) 
-     
-Returns information on the user's company that is necessary for making other Adobe Analytics API calls.
+[Working with CC Library elements]()
+
+lorem
 
 <DiscoverBlock slots="link, text"/>
 
-[Segments API](guides/segments_api/) 
+[Using hypermedia links]()
 
-Provides configuration guidance and best practices for the /segments endpoint.
-
-<DiscoverBlock slots="link, text"/>
-
-[Reporting Guide API](guides/reporting_api/)
-
-Provides configuration guidance and best practices for the /reports endpoint.
+lorem
 
 <DiscoverBlock slots="link, text"/>
 
-[Migrating from 1.4 to 2.0](guides/migrating/)
+[Configuring webhooks for CC Libraries Events]()
 
-For help migrating from the 1.4 versions of the Analytics API to the newer and more capable /reports API.   
+lorem
 
-<DiscoverBlock width="100%" slots="heading, link, text"/>
+<DiscoverBlock slots="heading, link, text"/>
 
 ### API References
 
-[Try the API](api/) 
+[Try the API](api/)
 
 Try the Analytics API with Swagger UI. Explore, make calls, with full endpoint descriptions.
 
-## Contributing 
+## Design
 
-We encourage you to participate in our open documentation initiative, if you have suggestions, corrections, additions 
-or deletions for this documentation, check out the source from [this github repo](https://github.com/adobe/gatsby-theme-spectrum-example), and submit a pull 
-request with your contribution. For more information, refer to the [contributing page](support/contribute/).
+_design resources here_
 
-## API Requests & Rate Limits
+## Go live
 
-The timeout for API requests through adobe.io is currently *60 seconds*.
+_submission and review resources here_
 
-The default rate limit for an Adobe Analytics Company is *120 requests per minute*. (The limit is enforced as *12 requests every 6 seconds*).
-When rate limiting is being enforced you will get `429` HTTP response codes with the following response body: `{"error_code":"429050","message":"Too many requests"}`    
+## Join the community
+
+We'd love for you to get involved in the way that's best for you. You can:
+
+- Join our developer forums to meet other developers, ask questions, and offer help
+- Contribute issues and pull requests to our open source repos, including:
+  - [CC Libraries org on GitHub](https://github.com/cc-libraries-api)
+  - [CC Libraries Documentation repo on GitHub](https://github.com/AdobeDocs/cc-libraries-api)
