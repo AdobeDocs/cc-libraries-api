@@ -32,7 +32,18 @@ module.exports = {
         path: "/api/",
       },
     ],
-    subPages: [],
+    subPages: [
+      {
+        title: "Integrate",
+        path: "/guides/oauth/",
+        pages: [
+          {
+            title: "OAuth",
+            path: "/guides/oauth/",
+          },
+        ],
+      },
+    ],
   },
   plugins: [`@adobe/gatsby-theme-parliament`],
   pathPrefix:
