@@ -20,11 +20,9 @@ CC Libraries are accessible across all of Adobe's tools and offer a powerful way
 - [CC Libraries GitHub org](https://github.com/cc-libraries-api)
 - [CC Libraries Documentation repo](https://github.com/AdobeDocs/cc-libraries-api)
 
-## Overview
+## Welcome
 
 Welcome to the CC Libraries API documentation! Here you can learn all about CC Libraries, read development guides, explore endpont references, and find tools and sample code.
-
-## Integrate
 
 <DiscoverBlock slots="heading, link, text"/>
 
@@ -39,6 +37,8 @@ If you're new to CC Libraries, get started by having a look at this service from
 [What can I do with this API?]()
 
 A high-level introduction to key features this API supports.
+
+## Integrate
 
 <DiscoverBlock slots="heading, link, text"/>
 

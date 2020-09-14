@@ -28,18 +28,80 @@ module.exports = {
         path: "/",
       },
       {
+        title: "Integrate",
+        path: "/integrate/",
+      },
+      {
         title: "API Reference",
         path: "/api/",
       },
     ],
     subPages: [
       {
-        title: "Integrate",
-        path: "/guides/oauth/",
+        title: "Setup",
+        path: "/integrate/setup/",
         pages: [
           {
-            title: "OAuth",
-            path: "/guides/oauth/",
+            title: "How to get your developer credentials",
+            path: "/integrate/setup/developer-credentials/",
+          },
+          {
+            title: "How to get access tokens with OAuth",
+            path: "/integrate/setup/oauth/",
+          },
+        ],
+      },
+      {
+        title: "Tutorials",
+        path: "/integrate/tutorials/",
+        pages: [
+          {
+            title: "Quick start with cURL",
+            path: "/integrate/tutorials/quick-start-curl/",
+          },
+          {
+            title: "Quick start with Node.js",
+            path: "/integrate/tutorials/quick-start-nodejs/",
+          },
+        ],
+      },
+      {
+        title: "Guides",
+        path: "/integrate/guides/",
+        pages: [
+          {
+            title: "Working with library elements",
+            path: "/integrate/guides/working-with-elements/",
+            pages: [
+              {
+                title: "Supported elements",
+                path:
+                  "/integrate/guides/working-with-elements/supported-elements/",
+              },
+              {
+                title: "Getting data",
+                path: "/integrate/guides/working-with-elements/getting-data/",
+              },
+              {
+                title: "Accessing file formats",
+                path:
+                  "/integrate/guides/working-with-elements/accessing-file-formats/",
+              },
+              {
+                title: "Creating elements",
+                path:
+                  "/integrate/guides/working-with-elements/creating-elements/",
+              },
+              {
+                title: "Element validations",
+                path:
+                  "/integrate/guides/working-with-elements/element-validations/",
+              },
+            ],
+          },
+          {
+            title: "Configuring webhooks for events",
+            path: "/integrate/guides/configuring-events-webhooks/",
           },
         ],
       },
