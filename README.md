@@ -13,3 +13,4 @@ Follow the [instructions](https://github.com/adobe/gatsby-theme-parliament#getti
 3. `npm install`
 4. `npm run dev`
 5. Write great things in `src/pages`
+6. Configure nav in `gatsby-config.js` as needed ([instructions](https://github.com/adobe/gatsby-theme-parliament#global-navigation))
