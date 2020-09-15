@@ -17,11 +17,7 @@ globalNav.menus = [globalNav.menus[1]];
 module.exports = {
   siteMetadata: {
     globalNav,
-    versions: [
-      {
-        title: "v1.0",
-      },
-    ],
+    versions: [],
     pages: [
       {
         title: "CC Libraries API",
@@ -30,6 +26,10 @@ module.exports = {
       {
         title: "Integrate",
         path: "/integrate/",
+      },
+      {
+        title: "Go live",
+        path: "/go-live/",
       },
       {
         title: "API Reference",
@@ -102,6 +102,24 @@ module.exports = {
           {
             title: "Configuring webhooks for events",
             path: "/integrate/guides/configuring-events-webhooks/",
+          },
+        ],
+      },
+      {
+        title: "Go live",
+        path: "/go-live/",
+        pages: [
+          {
+            title: "Review process",
+            path: "/go-live/review-process-overview/",
+          },
+          {
+            title: "Submission checklist",
+            path: "/go-live/submission-checklist/",
+          },
+          {
+            title: "Marketing your integration",
+            path: "/go-live/marketing/",
           },
         ],
       },
