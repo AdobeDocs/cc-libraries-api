@@ -44,13 +44,13 @@ A high-level introduction to key features this API supports.
 
 ### Setup
 
-[How to get your developer credentials]()
+[How to get your developer credentials](integrate/setup/developer-credentials/)
 
 Before you get started, you'll need a Client ID and Secret. We'll show you how to get them on the Adobe Developer Console.
 
 <DiscoverBlock slots="link, text"/>
 
-[How to get access tokens with OAuth]()
+[How to get access tokens with OAuth](integrate/setup/oauth/)
 
 See where to learn more about Adobe OAuth 2.0 and try our OAuth 2.0 Playground for a quicker start.
 
@@ -58,13 +58,13 @@ See where to learn more about Adobe OAuth 2.0 and try our OAuth 2.0 Playground f
 
 ### Tutorials
 
-[Quick Start with cURL]()
+[Quick Start with cURL](tutorials/quick-start-curl/)
 
 Make your first API call via the cURL command-line tool.
 
 <DiscoverBlock slots="link, text"/>
 
-[Quick Start with Node.js]()
+[Quick Start with Node.js](tutorials/quick-start-nodejs/)
 
 Make your first API call from a Node.js script.
 
@@ -72,7 +72,7 @@ Make your first API call from a Node.js script.
 
 ### Guides
 
-[Working with CC Library elements]()
+[Working with CC Library elements](guides/working-with-elements/)
 
 lorem
 
@@ -84,17 +84,17 @@ lorem
 
 <DiscoverBlock slots="link, text"/>
 
-[Configuring webhooks for CC Libraries Events]()
+[Configuring webhooks for CC Libraries Events](guides/configuring-events-webhooks/)
 
 lorem
 
 <DiscoverBlock slots="heading, link, text"/>
 
-### API References
+### API Reference
 
-[Try the API](api/)
+[Explore the API](api/)
 
-Try the Analytics API with Swagger UI. Explore, make calls, with full endpoint descriptions.
+Browse our endpoints with full descriptions and sample responses.
 
 ## Design
 
