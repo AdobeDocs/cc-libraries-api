@@ -17,7 +17,6 @@ globalNav.menus = [globalNav.menus[1]];
 module.exports = {
   siteMetadata: {
     globalNav,
-    versions: [],
     pages: [
       {
         title: "CC Libraries API",
