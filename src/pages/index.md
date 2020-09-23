@@ -58,13 +58,13 @@ See where to learn more about Adobe OAuth 2.0 and try our OAuth 2.0 Playground f
 
 ### Tutorials
 
-[Quick Start with cURL](tutorials/quick-start-curl/)
+[Quick Start with cURL](integrate/tutorials/quick-start-curl/)
 
 Make your first API call via the cURL command-line tool.
 
 <DiscoverBlock slots="link, text"/>
 
-[Quick Start with Node.js](tutorials/quick-start-nodejs/)
+[Quick Start with Node.js](integrate/tutorials/quick-start-nodejs/)
 
 Make your first API call from a Node.js script.
 
@@ -100,19 +100,13 @@ Browse our endpoints with full descriptions and sample responses.
 
 <DiscoverBlock slots="link, text"/>
 
-[Review process overview]()
+[CC Integrations Review process](go-live/review-process/)
 
-Learn about our review process and associated timelines.
-
-<DiscoverBlock slots="link, text"/>
-
-[Submission checklist]()
-
-Get ready to submit your integration for review and approval by Adobe.
+Learn about our review process and associated timelines. Use our submission checklist to get ready to submit your integration for review and approval by Adobe.
 
 <DiscoverBlock slots="link, text"/>
 
-[Marketing your integration]()
+[Marketing your integration](go-live/marketing/)
 
 Get go-to-market tips and guidelines from the Adobe Creative Cloud Developer Brand Guide.
 

@@ -109,12 +109,8 @@ module.exports = {
         path: "/go-live/",
         pages: [
           {
-            title: "Review process",
-            path: "/go-live/review-process-overview/",
-          },
-          {
-            title: "Submission checklist",
-            path: "/go-live/submission-checklist/",
+            title: "CC Integrations Review",
+            path: "/go-live/review-process/",
           },
           {
             title: "Marketing your integration",
