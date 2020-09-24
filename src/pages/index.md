@@ -28,17 +28,19 @@ Welcome to the CC Libraries API documentation! Here you can learn all about CC L
 
 ### Orientation to CC Libraries
 
-[What are CC Libraries?]()
+[What are CC Libraries?](welcome/product-overview/)
 
 If you're new to CC Libraries, get started by having a look at this service from the user perspective.
 
 <DiscoverBlock slots="link, text"/>
 
-[What can I do with this API?]()
+[What can I do with this API?](welcome/api-features/)
 
 A high-level introduction to key features this API supports.
 
 ## Integrate
+
+In this section, you can learn how to get set up to make API calls, jump start your development with quick start tutorials, read guides on advanced topics, and browse our API endpoints and responses.
 
 <DiscoverBlock slots="heading, link, text"/>
 
@@ -74,19 +76,13 @@ Make your first API call from a Node.js script.
 
 [Working with CC Library elements](guides/working-with-elements/)
 
-lorem
-
-<DiscoverBlock slots="link, text"/>
-
-[Using hypermedia links]()
-
-lorem
+Learn all about supported libary elements, how to fetch element data, and how to create new elements in a library.
 
 <DiscoverBlock slots="link, text"/>
 
 [Configuring webhooks for CC Libraries Events](guides/configuring-events-webhooks/)
 
-lorem
+Listen for updates in CC Libraries and get notified when users make changes.
 
 <DiscoverBlock slots="heading, link, text"/>
 
@@ -98,11 +94,13 @@ Browse our endpoints with full descriptions and sample responses.
 
 ## Go live
 
+In this section, you can learn about the steps for taking your integration into production and letting your users know about it.
+
 <DiscoverBlock slots="link, text"/>
 
 [CC Integrations Review process](go-live/review-process/)
 
-Learn about our review process and associated timelines. Use our submission checklist to get ready to submit your integration for review and approval by Adobe.
+Learn about our review process and associated timelines, and follow our review submission checklist.
 
 <DiscoverBlock slots="link, text"/>
 
