@@ -23,19 +23,41 @@ module.exports = {
         path: "/",
       },
       {
-        title: "Integrate",
-        path: "/integrate/",
+        title: "Welcome",
+        path: "/welcome/",
       },
       {
-        title: "Go live",
-        path: "/go-live/",
+        title: "Integrate",
+        path: "/integrate/",
       },
       {
         title: "API Reference",
         path: "/api/",
       },
+      {
+        title: "Go live",
+        path: "/go-live/",
+      },
     ],
     subPages: [
+      {
+        title: "Welcome",
+        path: "/welcome/",
+        pages: [
+          {
+            title: "What are CC Libraries?",
+            path: "/welcome/product-overview/",
+          },
+          {
+            title: "What can I do with this API?",
+            path: "/welcome/api-features/",
+          },
+          {
+            title: "Sample Libraries",
+            path: "/welcome/sample-libraries/",
+          },
+        ],
+      },
       {
         title: "Setup",
         path: "/integrate/setup/",

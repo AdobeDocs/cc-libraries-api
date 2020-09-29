@@ -22,7 +22,7 @@ CC Libraries are accessible across all of Adobe's tools and offer a powerful way
 
 ## Welcome
 
-Welcome to the CC Libraries API documentation! Here you can learn all about CC Libraries, read development guides, explore endpont references, and find tools and sample code.
+Welcome to the CC Libraries API! Before jumping straight into the documentation, we recommend taking a moment to learn more about what CC Libraries are and what the API can do for you.
 
 <DiscoverBlock slots="heading, link, text"/>
 
@@ -37,6 +37,12 @@ If you're new to CC Libraries, get started by having a look at this service from
 [What can I do with this API?](welcome/api-features/)
 
 A high-level introduction to key features this API supports.
+
+<DiscoverBlock slots="link, text"/>
+
+[Sample libraries](welcome/sample-libraries/)
+
+Need some sample Library content to experiment with? Try these public Libraries.
 
 ## Integrate
 
@@ -74,13 +80,13 @@ Make your first API call from a Node.js script.
 
 ### Guides
 
-[Working with CC Library elements](guides/working-with-elements/)
+[Working with CC Library elements](integrate/guides/working-with-elements/)
 
 Learn all about supported libary elements, how to fetch element data, and how to create new elements in a library.
 
 <DiscoverBlock slots="link, text"/>
 
-[Configuring webhooks for CC Libraries Events](guides/configuring-events-webhooks/)
+[Configuring webhooks for CC Libraries Events](integrate/guides/configuring-events-webhooks/)
 
 Listen for updates in CC Libraries and get notified when users make changes.
 

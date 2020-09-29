@@ -43,8 +43,9 @@ If you're planning to use credentials from an **existing project** on the Adobe 
 
 Now you have access to your Client ID and Secret.
 
-> **Info**
-> Keep your client secret private, and never share it or include it in public repos.
+<InlineAlert variant="info" slots="text"/>
+
+Keep your client secret private, and never share it or include it in public repos.
 
 You'll use these credentials as part of your integration, and you can always find them again on the Adobe Developer Console.
 
