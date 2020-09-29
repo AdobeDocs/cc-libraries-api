@@ -91,6 +91,10 @@ module.exports = {
         path: "/integrate/guides/",
         pages: [
           {
+            title: "Getting data",
+            path: "/integrate/guides/getting-data/",
+          },
+          {
             title: "Working with library elements",
             path: "/integrate/guides/working-with-elements/",
             pages: [
@@ -98,10 +102,6 @@ module.exports = {
                 title: "Supported elements",
                 path:
                   "/integrate/guides/working-with-elements/supported-elements/",
-              },
-              {
-                title: "Getting data",
-                path: "/integrate/guides/working-with-elements/getting-data/",
               },
               {
                 title: "Accessing file formats",
