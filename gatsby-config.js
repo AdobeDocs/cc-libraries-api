@@ -23,8 +23,8 @@ module.exports = {
         path: "/",
       },
       {
-        title: "Welcome",
-        path: "/welcome/",
+        title: "Overview",
+        path: "/overview/",
       },
       {
         title: "Integrate",
@@ -41,20 +41,16 @@ module.exports = {
     ],
     subPages: [
       {
-        title: "Welcome",
-        path: "/welcome/",
+        title: "Overview",
+        path: "/overview/",
         pages: [
           {
             title: "What are CC Libraries?",
-            path: "/welcome/product-overview/",
-          },
-          {
-            title: "What can I do with this API?",
-            path: "/welcome/api-features/",
+            path: "/overview/product-overview/",
           },
           {
             title: "Sample Libraries",
-            path: "/welcome/sample-libraries/",
+            path: "/overview/sample-libraries/",
           },
         ],
       },

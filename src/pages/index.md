@@ -20,27 +20,19 @@ CC Libraries are accessible across all of Adobe's tools and offer a powerful way
 - [CC Libraries GitHub org](https://github.com/cc-libraries-api)
 - [CC Libraries Documentation repo](https://github.com/AdobeDocs/cc-libraries-api)
 
-## Welcome
+## Overview
 
 Welcome to the CC Libraries API! Before jumping straight into the documentation, we recommend taking a moment to learn more about what CC Libraries are and what the API can do for you.
 
-<DiscoverBlock slots="heading, link, text"/>
+<DiscoverBlock slots="link, text"/>
 
-### Orientation to CC Libraries
-
-[What are CC Libraries?](welcome/product-overview/)
+[What are CC Libraries?](overview/product-overview/)
 
 If you're new to CC Libraries, get started by having a look at this service from the user perspective.
 
 <DiscoverBlock slots="link, text"/>
 
-[What can I do with this API?](welcome/api-features/)
-
-A high-level introduction to key features this API supports.
-
-<DiscoverBlock slots="link, text"/>
-
-[Sample libraries](welcome/sample-libraries/)
+[Sample libraries](overview/sample-libraries/)
 
 Need some sample Library content to experiment with? Try these public Libraries.
 
