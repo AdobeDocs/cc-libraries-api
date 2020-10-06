@@ -12,12 +12,6 @@ If you're new to CC Libraries, get started by having a look at this service from
 
 <DiscoverBlock slots="link, text"/>
 
-[What can I do with this API?](api-features/)
-
-A high-level introduction to key features this API supports.
-
-<DiscoverBlock slots="link, text"/>
-
 [Sample libraries](sample-libraries/)
 
 Need some sample Library content to experiment with? Try these public Libraries.
