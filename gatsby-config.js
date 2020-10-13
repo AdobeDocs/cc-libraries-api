@@ -12,7 +12,7 @@
 
 const globalNav = require("@adobe/gatsby-theme-parliament/globalNav.json");
 
-globalNav.menus = [globalNav.menus[1]];
+globalNav.menus = [globalNav.menus[2]];
 
 module.exports = {
   siteMetadata: {
