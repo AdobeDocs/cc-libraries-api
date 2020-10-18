@@ -130,7 +130,7 @@ module.exports = {
         path: "/go-live/",
         pages: [
           {
-            title: "CC Integrations Review",
+            title: "Submission and review",
             path: "/go-live/review-process/",
           },
           {
