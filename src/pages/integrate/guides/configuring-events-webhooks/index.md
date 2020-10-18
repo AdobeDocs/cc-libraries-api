@@ -1,6 +1,6 @@
 # Configuring Webhooks for Created Cloud Libraries Events
 
-I/O Events makes it possible to listen for changes to Creative Cloud Libraries and get a notification when those changes occur. Developers can subscribe to _create_, _delete_, and _ukpdate_ events for a user's Creative Cloud Libraries. This tutorial will walk through how to set up and configure your project to listen for Creative Cloud Libraries events.
+I/O Events makes it possible to listen for changes to Creative Cloud Libraries and get a notification when those changes occur. Developers can subscribe to _create_, _delete_, and _update_ events for a user's Creative Cloud Libraries. This tutorial will walk through how to set up and configure your project to listen for Creative Cloud Libraries events.
 
 ## Creative Cloud Library Event Type Descriptions
 
@@ -34,7 +34,7 @@ When creating an Event Registration, Adobe I/O Events will send a challenge to t
 
 Open a terminal window to the location where the [I/O Events Sample Webhook project](https://github.com/adobeio/io-event-sample-webhook) was cloned. In that directory, run
 
-```
+```shell
 npm install
 npm start
 ```
@@ -43,13 +43,13 @@ This will create a local service that responds correctly to the I/O Events chall
 
 The next step is to make it available to the internet using ngrok. Open another terminal window in the location where ngrok was installed and run
 
-```
+```shell
  ./ngrock http 3000
 ```
 
 That should result in an output that looks like this
 
-```
+```shell
 Session Status                online
 Account                       <Your Name>
 Version                       2.3.35

@@ -43,7 +43,7 @@ on the representation type.
 Generally, all representations should also contain a "relationship" property as described above. However, this is not
 strictly required; the default relationship is "rendition."
 
-```
+```json
 {
     "name": "my-cool-graphic",
     "type": "application/vnd.adobe.element.image+dcx",
@@ -90,7 +90,7 @@ In this case, only a single call to the CC library service is needed. An example
 Self-contained assets will always contain a required namespaced property, e.g., for colors, "color#data". The requirements
 for these properties will vary by representation type.
 
-```
+```json
 {
 	"name": "my-cooler-color",
 	"type": "application/vnd.adobe.element.color+dcx",
@@ -176,7 +176,7 @@ Then, we would upload the metadata:
 
 POST /api/v1/libraries/{{library-id}}/elements/
 
-```
+```json
 REQUEST:
 {
   "name": "my-coolest-font",
@@ -248,7 +248,7 @@ Afterwards, if you were to get the element, it might look like this:
 
 GET /api/v1/libraries/{{library-id}}/elements/9e46e07f-f9c1-4380-b199-754c1f6ffb9c?selector=full
 
-```
+```json
 {
     "id": "9e46e07f-f9c1-4380-b199-754c1f6ffb9c",
     "name": "my-coolest-font",

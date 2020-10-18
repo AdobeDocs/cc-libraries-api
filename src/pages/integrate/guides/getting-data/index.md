@@ -201,7 +201,7 @@ http://localhost:3000/cc-libraries/data/AAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA
 
 The response will look something like this:
 
-```
+```json
 {
   "total_count": 60,
   "elements": [
@@ -212,7 +212,7 @@ The response will look something like this:
 
 The `elements` array contains a JSON object full of metadata related to each of the elements stored in a given CC Library:
 
-```
+```json
 {
   "id": "BBBBBBBB-BBBB-BBBB-BBBB-BBBBBBBBB",
   "name": "An Element Name",
