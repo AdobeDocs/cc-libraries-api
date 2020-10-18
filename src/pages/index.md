@@ -1,15 +1,15 @@
 ---
-title: Overview - CC Libraries API
-description: This is the overview page of CC Libraries API
+title: Overview - Creative Cloud Libraries API
+description: This is the overview page of Creative Cloud Libraries API
 ---
 
 <Hero slots="image, heading, text" background="rgb(64, 34, 138)"/>
 
 ![Hero image](./illustration.png)
 
-# CC Libraries API
+# Creative Cloud Libraries API
 
-CC Libraries are accessible across all of Adobe's tools and offer a powerful way to organize logos, colors, and other assets so they can be easily accessed and re-used. The CC Libraries API lets you bring Libraries to your products and services.
+Libraries are accessible across all of Adobe's tools and offer a powerful way to organize logos, colors, and other assets so they can be easily accessed and re-used. The Creative Cloud Libraries API lets you bring Libraries to your products and services.
 
 <Resources slots="heading, links"/>
 
@@ -17,18 +17,18 @@ CC Libraries are accessible across all of Adobe's tools and offer a powerful way
 
 - [Code samples repo](https://github.com/cc-libraries-api/code-samples)
 - [Postman collection](https://github.com/cc-libraries-api/api-docs/blob/master/adobe_cc_libraries_apis.postman_collection.json)
-- [CC Libraries GitHub org](https://github.com/cc-libraries-api)
-- [CC Libraries Documentation repo](https://github.com/AdobeDocs/cc-libraries-api)
+- [Creative Cloud Libraries GitHub org](https://github.com/cc-libraries-api)
+- [Creative Cloud Libraries Documentation repo](https://github.com/AdobeDocs/cc-libraries-api)
 
 ## Overview
 
-Welcome to the CC Libraries API! Before jumping straight into the documentation, we recommend taking a moment to learn more about what CC Libraries are and what the API can do for you.
+Welcome to the Creative Cloud Libraries API! Before jumping straight into the documentation, we recommend taking a moment to learn more about what Libraries are and what the API can do for you.
 
 <DiscoverBlock slots="link, text"/>
 
-[What are CC Libraries?](overview/product-overview/)
+[What are Creative Cloud Libraries?](overview/product-overview/)
 
-If you're new to CC Libraries, get started by having a look at this service from the user perspective.
+If you're new to Creative Cloud Libraries, get started by having a look at this service from the user perspective.
 
 <DiscoverBlock slots="link, text"/>
 
@@ -78,9 +78,9 @@ Learn all about supported libary elements, how to fetch element data, and how to
 
 <DiscoverBlock slots="link, text"/>
 
-[Configuring webhooks for CC Libraries Events](integrate/guides/configuring-events-webhooks/)
+[Configuring webhooks for Creative Cloud Libraries Events](integrate/guides/configuring-events-webhooks/)
 
-Listen for updates in CC Libraries and get notified when users make changes.
+Listen for updates in Creative Cloud Libraries and get notified when users make changes.
 
 <DiscoverBlock slots="heading, link, text"/>
 
@@ -110,7 +110,7 @@ Get go-to-market tips and guidelines from the Adobe Creative Cloud Developer Bra
 
 We'd love for you to get involved in the way that's best for you. You can:
 
-- Join our developer forums to meet other developers, ask questions, and offer help
+- Join our [developer forums](https://forums.creativeclouddeveloper.com/c/creative-cloud-libraries/62) to meet other developers, ask questions, and offer help
 - Contribute issues and pull requests to our open source repos, including:
-  - [CC Libraries org on GitHub](https://github.com/cc-libraries-api)
-  - [CC Libraries Documentation repo on GitHub](https://github.com/AdobeDocs/cc-libraries-api)
+  - [Creative Cloud Libraries org on GitHub](https://github.com/cc-libraries-api)
+  - [Creative Cloud Libraries Documentation repo on GitHub](https://github.com/AdobeDocs/cc-libraries-api)

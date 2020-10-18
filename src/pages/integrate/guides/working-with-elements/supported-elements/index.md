@@ -57,7 +57,7 @@ things like PDFs, Word documents, etc. However, the most common types are:
 
 ### Example Payload
 
-```
+```json
 {
 	"name": "my-cool-image",
 	"type": "application/vnd.adobe.element.image+dcx",
@@ -136,7 +136,7 @@ The different color "types" are as follows - note that all colors require the pr
 
 ### Example postLibraryElement Payload:
 
-```
+```json
 {
 	"name": "my-color",
 	"type": "application/vnd.adobe.element.color+dcx",
@@ -214,7 +214,7 @@ representation of any single color will always be at index 0 in the array.
 
 ### Example postLibraryElement Payload
 
-```
+```json
 {
 	"name": "my-cool-colortheme",
 	"type": "application/vnd.adobe.element.colortheme+dcx",
@@ -395,7 +395,7 @@ Opacity:
 
 ### Example postLibraryElement Payload
 
-```
+```json
 {
 	"name": "my-cool-gradient",
 	"type": "application/vnd.adobe.element.gradient+dcx",
@@ -564,7 +564,7 @@ A character style may also be represented as an InDesign snippet.
 
 ## Example postLibraryElement Payload
 
-```
+```json
 {
   "name": "My character style",
   "type": "application/vnd.adobe.element.characterstyle+dcx",
@@ -704,7 +704,7 @@ primary or rendition representation is expected instead of an application/vnd.ad
 
 ### Example postLibraryElement Payload
 
-```
+```json
 {
   "adbeParaAlignment": "Alignment.CENTER_ALIGN",
   "adbeLeftIndent": {"type":"pt","value":12},
