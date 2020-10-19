@@ -1,3 +1,8 @@
+---
+title: Go Live—Creative Cloud Libraries API
+description: Take your Creative Cloud Libraries API integration to production. Learn about our review process and how to market your integration.
+---
+
 ## Go live
 
 In this section, you can learn about the steps for taking your integration into production and letting your users know about it.

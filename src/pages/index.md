@@ -1,6 +1,6 @@
 ---
-title: Overview - Creative Cloud Libraries API
-description: This is the overview page of Creative Cloud Libraries API
+title: Documentation—Creative Cloud Libraries API
+description: Documentation top page for the Creative Cloud Libraries API. Get quick starts, tutorials, endpoint references, sample code, and more.
 ---
 
 import Overview from "./overview/index.md"
@@ -14,7 +14,7 @@ import Community from "./community/index.md"
 
 # Creative Cloud Libraries API documentation
 
-Libraries are accessible across all of Adobe's tools and offer a powerful way to organize logos, colors, and other assets so they can be easily accessed and re-used. The Creative Cloud Libraries API lets you bring Libraries to your products and services.
+Libraries are accessible across all of Adobe's tools and offer a powerful way to organize logos, colors, and other assets so they can be easily accessed and re-used. The Libraries API lets you bring Libraries to your products and services.
 
 <Resources slots="heading, links"/>
 

@@ -1,3 +1,8 @@
+---
+title: Marketing—Creative Cloud Libraries API
+description: Get the Adobe Developer Brand Guide for tips and guidelines on marketing your Creative Cloud Libraries integration.
+---
+
 # Marketing your integration
 
 When getting the word out about your integration, your marketing must follow Adobe's branding guidelines.

@@ -1,3 +1,8 @@
+---
+title: Overview—Creative Cloud Libraries API
+description: Learn about Creative Cloud Libraries and how customers use Libraries. Then jump into building your own API integration.
+---
+
 ## Overview
 
 Welcome to the Creative Cloud Libraries API! Before jumping straight into the documentation, we recommend taking a moment to learn more about what Libraries are and what the API can do for you.

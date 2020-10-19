@@ -1,3 +1,8 @@
+---
+title: Community—Creative Cloud Libraries API
+description: Join the worldwide developer community building integrations to empower creativity. Meet other developers, ask questions, offer help.
+---
+
 ## Join the community
 
 Join the worldwide community of Creative Cloud Developers who are building integrations and plugins to empower creativity.
