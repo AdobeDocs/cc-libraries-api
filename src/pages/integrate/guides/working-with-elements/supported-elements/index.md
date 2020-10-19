@@ -41,7 +41,7 @@ Represents any still image.
 ### Allowed Representation Types
 
 The set of types that is allowed is quite expansive, and changes frequently. This includes common image types, file
-formats specific to different CC applications, and, in certain contexts, types we can convert to images, including
+formats specific to different Creative Cloud applications, and, in certain contexts, types we can convert to images, including
 things like PDFs, Word documents, etc. However, the most common types are:
 
 - image/gif
@@ -59,25 +59,25 @@ things like PDFs, Word documents, etc. However, the most common types are:
 
 ```json
 {
-	"name": "my-cool-image",
-	"type": "application/vnd.adobe.element.image+dcx",
-	"client": {
-		"deviceId": "MY_COOL_DEVICE_ID",
-		"device": "MY_COOL_DEVICE",
-		"app": "MY_COOL_APP"
-	},
-	"representations": [
-		{
-            "type": "image/svg+xml",
-            "relationship": "primary",
-            "storage_href": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/3f4d2883-f7e5-4d64-bec1-f153ae5d80af"
-        },
-        {
-            "type": "image/png",
-            "relationship": "rendition",
-            "storage_href": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/ec13e4e1-1c56-4d84-89ad-8df52f42ae8a"
-        }
-	]
+  "name": "my-cool-image",
+  "type": "application/vnd.adobe.element.image+dcx",
+  "client": {
+    "deviceId": "MY_COOL_DEVICE_ID",
+    "device": "MY_COOL_DEVICE",
+    "app": "MY_COOL_APP"
+  },
+  "representations": [
+    {
+      "type": "image/svg+xml",
+      "relationship": "primary",
+      "storage_href": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/3f4d2883-f7e5-4d64-bec1-f153ae5d80af"
+    },
+    {
+      "type": "image/png",
+      "relationship": "rendition",
+      "storage_href": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/ec13e4e1-1c56-4d84-89ad-8df52f42ae8a"
+    }
+  ]
 }
 ```
 
@@ -138,42 +138,42 @@ The different color "types" are as follows - note that all colors require the pr
 
 ```json
 {
-	"name": "my-color",
-	"type": "application/vnd.adobe.element.color+dcx",
-	"client": {
-		"deviceId": "MY_COOL_DEVICE_ID",
-		"device": "MY_COOL_DEVICE",
-		"app": "MY_COOL_APP"
-	},
-	"representations": [
-		{
-		    "type": "application/vnd.adobe.color+json",
-		    "relationship": "primary",
-		    "color#data": {
-		        "mode": "CMYK",
-		        "value": {
-	                "c": 100,
-	                "m": 79.0585160255432,
-	                "y": 39.5178139209747,
-	                "k": 31.2565803527832
-		        },
-		        "type": "process"
-		    }
-		},
-		{
-	        "type": "application/vnd.adobe.color+json",
-	        "relationship": "rendition",
-	        "color#data": {
-	            "mode": "RGB",
-	            "value": {
-	                "r": 12.7313232421875,
-	                "g": 56.0341644287109,
-	                "b": 89.8001861572266
-	            },
-	            "type": "process"
-	        }
-	    }
-	]
+  "name": "my-color",
+  "type": "application/vnd.adobe.element.color+dcx",
+  "client": {
+    "deviceId": "MY_COOL_DEVICE_ID",
+    "device": "MY_COOL_DEVICE",
+    "app": "MY_COOL_APP"
+  },
+  "representations": [
+    {
+      "type": "application/vnd.adobe.color+json",
+      "relationship": "primary",
+      "color#data": {
+        "mode": "CMYK",
+        "value": {
+          "c": 100,
+          "m": 79.0585160255432,
+          "y": 39.5178139209747,
+          "k": 31.2565803527832
+        },
+        "type": "process"
+      }
+    },
+    {
+      "type": "application/vnd.adobe.color+json",
+      "relationship": "rendition",
+      "color#data": {
+        "mode": "RGB",
+        "value": {
+          "r": 12.7313232421875,
+          "g": 56.0341644287109,
+          "b": 89.8001861572266
+        },
+        "type": "process"
+      }
+    }
+  ]
 }
 ```
 
@@ -216,132 +216,132 @@ representation of any single color will always be at index 0 in the array.
 
 ```json
 {
-	"name": "my-cool-colortheme",
-	"type": "application/vnd.adobe.element.colortheme+dcx",
-	"client": {
-		"deviceId": "MY_COOL_DEVICE_ID",
-		"device": "MY_COOL_DEVICE",
-		"app": "MY_COOL_APP"
-	},
-	"representations": [
-		{
-		    "type": "application/vnd.adobe.colortheme+json",
-		    "relationship": "primary",
-		    "colortheme#data": {
-				"tags": ["tag1", "tag2"],
-				"baseSwatchIndex": 0,
-				"rule" : "analogous",
-				"mood" : "colorful",
-				"swatches": [
-					[
-					  {
-					    "mode": "CMYK",
-					    "value": {
-					      "c": 0,
-					      "m": 12,
-					      "y": 37,
-					      "k": 30
-					    }
-					  },
-					  {
-					    "mode": "RGB",
-					    "value": {
-					      "r": 179,
-					      "g": 158,
-					      "b": 113
-					    },
-					    "type": "process",
-					    "profileName": "sRGB IEC61966-2.1"
-					  }
-					],
-					[
-					  {
-					    "mode": "CMYK",
-					    "value": {
-					      "c": 17,
-					      "m": 0,
-					      "y": 7,
-					      "k": 0
-					    }
-					  },
-					  {
-					    "mode": "RGB",
-					    "value": {
-					      "r": 212,
-					      "g": 255,
-					      "b": 237
-					    },
-					    "type": "process",
-					    "profileName": "sRGB IEC61966-2.1"
-					  }
-					],
-					[
-					  {
-					    "mode": "CMYK",
-					    "value": {
-					      "c": 0,
-					      "m": 8,
-					      "y": 27,
-					      "k": 0
-					    }
-					  },
-					  {
-					    "mode": "RGB",
-					    "value": {
-					      "r": 255,
-					      "g": 234,
-					      "b": 187
-					    },
-					    "type": "process",
-					    "profileName": "sRGB IEC61966-2.1"
-					  }
-					],
-					[
-					  {
-					    "mode": "CMYK",
-					    "value": {
-					      "c": 9,
-					      "m": 37,
-					      "y": 0,
-					      "k": 20
-					    }
-					  },
-					  {
-					    "mode": "RGB",
-					    "value": {
-					      "r": 185,
-					      "g": 129,
-					      "b": 204
-					    },
-					    "type": "process",
-					    "profileName": "sRGB IEC61966-2.1"
-					  }
-					],
-					[
-					  {
-					    "mode": "CMYK",
-					    "value": {
-					      "c": 8,
-					      "m": 32,
-					      "y": 0,
-					      "k": 30
-					    }
-					  },
-					  {
-					    "mode": "RGB",
-					    "value": {
-					      "r": 164,
-					      "g": 122,
-					      "b": 179
-					    },
-					    "type": "process",
-					    "profileName": "sRGB IEC61966-2.1"
-					  }
-					]
-				]
-		    }
-		}
-	]
+  "name": "my-cool-colortheme",
+  "type": "application/vnd.adobe.element.colortheme+dcx",
+  "client": {
+    "deviceId": "MY_COOL_DEVICE_ID",
+    "device": "MY_COOL_DEVICE",
+    "app": "MY_COOL_APP"
+  },
+  "representations": [
+    {
+      "type": "application/vnd.adobe.colortheme+json",
+      "relationship": "primary",
+      "colortheme#data": {
+        "tags": ["tag1", "tag2"],
+        "baseSwatchIndex": 0,
+        "rule": "analogous",
+        "mood": "colorful",
+        "swatches": [
+          [
+            {
+              "mode": "CMYK",
+              "value": {
+                "c": 0,
+                "m": 12,
+                "y": 37,
+                "k": 30
+              }
+            },
+            {
+              "mode": "RGB",
+              "value": {
+                "r": 179,
+                "g": 158,
+                "b": 113
+              },
+              "type": "process",
+              "profileName": "sRGB IEC61966-2.1"
+            }
+          ],
+          [
+            {
+              "mode": "CMYK",
+              "value": {
+                "c": 17,
+                "m": 0,
+                "y": 7,
+                "k": 0
+              }
+            },
+            {
+              "mode": "RGB",
+              "value": {
+                "r": 212,
+                "g": 255,
+                "b": 237
+              },
+              "type": "process",
+              "profileName": "sRGB IEC61966-2.1"
+            }
+          ],
+          [
+            {
+              "mode": "CMYK",
+              "value": {
+                "c": 0,
+                "m": 8,
+                "y": 27,
+                "k": 0
+              }
+            },
+            {
+              "mode": "RGB",
+              "value": {
+                "r": 255,
+                "g": 234,
+                "b": 187
+              },
+              "type": "process",
+              "profileName": "sRGB IEC61966-2.1"
+            }
+          ],
+          [
+            {
+              "mode": "CMYK",
+              "value": {
+                "c": 9,
+                "m": 37,
+                "y": 0,
+                "k": 20
+              }
+            },
+            {
+              "mode": "RGB",
+              "value": {
+                "r": 185,
+                "g": 129,
+                "b": 204
+              },
+              "type": "process",
+              "profileName": "sRGB IEC61966-2.1"
+            }
+          ],
+          [
+            {
+              "mode": "CMYK",
+              "value": {
+                "c": 8,
+                "m": 32,
+                "y": 0,
+                "k": 30
+              }
+            },
+            {
+              "mode": "RGB",
+              "value": {
+                "r": 164,
+                "g": 122,
+                "b": 179
+              },
+              "type": "process",
+              "profileName": "sRGB IEC61966-2.1"
+            }
+          ]
+        ]
+      }
+    }
+  ]
 }
 ```
 
@@ -397,93 +397,93 @@ Opacity:
 
 ```json
 {
-	"name": "my-cool-gradient",
-	"type": "application/vnd.adobe.element.gradient+dcx",
-	"client": {
-		"deviceId": "MY_COOL_DEVICE_ID",
-		"device": "MY_COOL_DEVICE",
-		"app": "MY_COOL_APP"
-		},
-	"representations": [
-        {
-            "id": "d8453c78-4dd4-44c0-ab18-0114e171aa84",
-            "type": "application/vnd.adobe.gradient+json",
-            "relationship": "primary",
-            "gradient#data": {
-			    "type": "linear",
-			    "angle": 0,
-			    "stops": [
-			        {
-			            "color": [
-			                {
-			                    "mode": "RGB",
-			                    "value": {
-			                        "r": 102.0000000000000,
-			                        "g": 238.0000000000000,
-			                        "b": 207.0000000000000
-			                    },
-			                    "type": "process",
-			                    "profileName": "sRGB IEC61966-2.1"
-			                },
-			                {
-			                    "mode": "CMYK",
-			                    "value": {
-			                        "c": 48,
-			                        "m": 0.0000000000000,
-			                        "y": 30.0000000000000,
-			                        "k": 0.0000000000000
-			                    },
-			                    "type": "process",
-			                    "profileName": "U.S. Web Coated (SWOP) v2"
-			                }
-			            ],
-			            "midpoint": 0,
-			            "offset": 0
-			        },
-			        {
-			            "color": [
-			                {
-			                    "mode": "RGB",
-			                    "value": {
-			                        "r": 74.0000000000000,
-			                        "g": 96.0000000000000,
-			                        "b": 204.0000000000000
-			                    },
-			                    "type": "process",
-			                    "profileName": "sRGB IEC61966-2.1"
-			                },
-			                {
-			                    "mode": "CMYK",
-			                    "value": {
-			                        "c": 77,
-			                        "m": 67.0000000000000,
-			                        "y": 0.0000000000000,
-			                        "k": 0.0000000000000
-			                    },
-			                    "type": "process",
-			                    "profileName": "U.S. Web Coated (SWOP) v2"
-			                }
-			            ],
-			            "midpoint": 0.5,
-			            "offset": 1.0
-			        }
-			    ],
-			    "opacities": [
-			        {
-			            "opacity": 1.0,
-			            "midpoint": 0,
-			            "offset": 0
-			        },
-			        {
-			            "opacity": 1.0,
-			            "midpoint": 0.5,
-			            "offset": 1.0
-			        }
-			    ],
-			    "interpolation": "linear"
-			}
-        }
-	]
+  "name": "my-cool-gradient",
+  "type": "application/vnd.adobe.element.gradient+dcx",
+  "client": {
+    "deviceId": "MY_COOL_DEVICE_ID",
+    "device": "MY_COOL_DEVICE",
+    "app": "MY_COOL_APP"
+  },
+  "representations": [
+    {
+      "id": "d8453c78-4dd4-44c0-ab18-0114e171aa84",
+      "type": "application/vnd.adobe.gradient+json",
+      "relationship": "primary",
+      "gradient#data": {
+        "type": "linear",
+        "angle": 0,
+        "stops": [
+          {
+            "color": [
+              {
+                "mode": "RGB",
+                "value": {
+                  "r": 102.0,
+                  "g": 238.0,
+                  "b": 207.0
+                },
+                "type": "process",
+                "profileName": "sRGB IEC61966-2.1"
+              },
+              {
+                "mode": "CMYK",
+                "value": {
+                  "c": 48,
+                  "m": 0.0,
+                  "y": 30.0,
+                  "k": 0.0
+                },
+                "type": "process",
+                "profileName": "U.S. Web Coated (SWOP) v2"
+              }
+            ],
+            "midpoint": 0,
+            "offset": 0
+          },
+          {
+            "color": [
+              {
+                "mode": "RGB",
+                "value": {
+                  "r": 74.0,
+                  "g": 96.0,
+                  "b": 204.0
+                },
+                "type": "process",
+                "profileName": "sRGB IEC61966-2.1"
+              },
+              {
+                "mode": "CMYK",
+                "value": {
+                  "c": 77,
+                  "m": 67.0,
+                  "y": 0.0,
+                  "k": 0.0
+                },
+                "type": "process",
+                "profileName": "U.S. Web Coated (SWOP) v2"
+              }
+            ],
+            "midpoint": 0.5,
+            "offset": 1.0
+          }
+        ],
+        "opacities": [
+          {
+            "opacity": 1.0,
+            "midpoint": 0,
+            "offset": 0
+          },
+          {
+            "opacity": 1.0,
+            "midpoint": 0.5,
+            "offset": 1.0
+          }
+        ],
+        "interpolation": "linear"
+      }
+    }
+  ]
 }
 ```
 
@@ -522,7 +522,7 @@ Additionally, most styles will have their own special requirements.
 
 Due to the variety of constraints within each style, application-derived interrelationships between
 styles, and, the possibility that some will change over time in accordance with application-specific
-requirements, it may be helpful to try prototyping character styles within a CC app first, before
+requirements, it may be helpful to try prototyping character styles within a Creative Cloud app first, before
 attempting to create them _ex situ_.
 
 Some frequently used styles:
@@ -576,22 +576,24 @@ A character style may also be represented as an InDesign snippet.
   "representations": [
     {
       "id": "76ab62cd-f0fd-4778-ae4f-ce7a2aa4d7d0",
-      "type": "application\/vnd.adobe.characterstyle+json",
+      "type": "application/vnd.adobe.characterstyle+json",
       "relationship": "primary",
       "is_full_size": false,
       "is_external_link": false,
       "preferredThumbnail": false,
       "representation_order": 0,
       "characterstyle#data": {
-        "color": [{
-          "mode": "RGB",
-          "value": {
-            "r": 0,
-            "g": 0,
-            "b": 0
-          },
-          "type": "process"
-        }],
+        "color": [
+          {
+            "mode": "RGB",
+            "value": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            },
+            "type": "process"
+          }
+        ],
         "adbeFont": {
           "family": "Helvetica Neue",
           "name": "HelveticaNeue",
@@ -625,10 +627,7 @@ A character style may also be represented as an InDesign snippet.
         "adbeIlstRotation": 0,
         "adbeIlstTateChuYokoHorizontal": 0,
         "adbeIlstTateChuYokoVertical": 0,
-        "fontFeatureSettings": [
-          "clig",
-          "liga"
-        ],
+        "fontFeatureSettings": ["clig", "liga"],
         "adbeIlstTsume": 0,
         "adbeVerticalScale": 100,
         "adbeIlstWariChuCharactersAfterBreak": 2,
@@ -640,13 +639,13 @@ A character style may also be represented as an InDesign snippet.
       }
     },
     {
-    	"type": "image/png",
-    	"relationship": "rendition",
-    	"storage_href": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:US:efb1969b-fed5-4381-836e-6d7a97a14fbf?component_id=602eb2e4-d86d-481f-adc2-d751fc5ca961",
-	    "content_length": 158356,
-	    "etag": "\"9b4fb626b2ea694ceceda1b5caa7463c\"",
-	    "md5": "m0+2JrLqaUzs7aG1yqdGPA==",
-	    "version": "0"
+      "type": "image/png",
+      "relationship": "rendition",
+      "storage_href": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:US:efb1969b-fed5-4381-836e-6d7a97a14fbf?component_id=602eb2e4-d86d-481f-adc2-d751fc5ca961",
+      "content_length": 158356,
+      "etag": "\"9b4fb626b2ea694ceceda1b5caa7463c\"",
+      "md5": "m0+2JrLqaUzs7aG1yqdGPA==",
+      "version": "0"
     }
   ]
 }
@@ -707,7 +706,7 @@ primary or rendition representation is expected instead of an application/vnd.ad
 ```json
 {
   "adbeParaAlignment": "Alignment.CENTER_ALIGN",
-  "adbeLeftIndent": {"type":"pt","value":12},
+  "adbeLeftIndent": { "type": "pt", "value": 12 },
   "adbeHyphenateWordsLongerThan": 10,
   "adbeHyphenation": true
 }

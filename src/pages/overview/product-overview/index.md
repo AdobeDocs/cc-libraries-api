@@ -1,8 +1,8 @@
-# What are CC Libraries?
+# What are Creative Cloud Libraries?
 
-Before you start, it's worth quickly orienting yourself to [CC Libraries](https://www.adobe.com/creativecloud/libraries.html).
+Before you start, it's worth quickly orienting yourself to [Creative Cloud Libraries](https://www.adobe.com/creativecloud/libraries.html).
 
-CC Libraries are accessible across all of Adobe's tools and offer a powerful way to organize logos, colors, and other assets so they can be easily re-used and accessed. Using the API, you can let Creative Cloud users access their Libraries and add new content to their Libraries right from within your products and services.
+Creative Cloud Libraries are accessible across all of Adobe's tools and offer a powerful way to organize logos, colors, and other assets so they can be easily re-used and accessed. Using the API, you can let Creative Cloud users access their Libraries and add new content to their Libraries right from within your products and services.
 
 Creative Cloud Libraries are made up of _elements_ that represent different asset types. Examples of _elements_ include _Graphics_, _Character Styles_, _Colors_, and many more. Each _element_ contains the information that represents that asset, which is different for each _element_ type, as well as a thumbnail to represent the asset and some other metadata.
 

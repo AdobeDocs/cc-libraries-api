@@ -1,3 +1,8 @@
+---
+title: Submission and review—Creative Cloud Libraries API
+description: Ready to take your Creative Cloud Libraries API integration to production? Learn about our submission and review process.
+---
+
 # Submission and review
 
 Congratulations! You've built a great Adobe integration and you're ready to release it to your customers.
@@ -12,17 +17,17 @@ This document will give you an idea of what we’re checking for during the revi
 
 Our goal is to balance providing you the best developer experience during review that we can, while helping ensure that approved integrations offer a great user experience for our mutual customers.
 
-This list will give you an overview of the kinds of things we check for during review. The list will change over time, and cannot cover absolutely everything we look at. 
+This list will give you an overview of the kinds of things we check for during review. The list will change over time, and cannot cover absolutely everything we look at.
 
 ### Metadata
 
-As part of submission, you will enter two kinds of metadata on the [Adobe Developer Console](https://console.adobe.io): a publisher profile and details about the specific integration you are submitting. 
+As part of submission, you will enter two kinds of metadata on the [Adobe Developer Console](https://console.adobe.io): a publisher profile and details about the specific integration you are submitting.
 
 For specifics regarding character lengths, image dimensions, and required fields, always refer to the Adobe Developer Console submission form for the latest requirements.
 
 <InlineAlert variant="info" slots="text"/>
 
-We recommend that you draft this metadata in a text editor, and not directly in the Adobe Developer Console. This will help you avoid losing your writing if your browser refreshes before submission. 
+We recommend that you draft this metadata in a text editor, and not directly in the Adobe Developer Console. This will help you avoid losing your writing if your browser refreshes before submission.
 
 #### Publisher profile
 
@@ -81,15 +86,15 @@ When an integration involves a logged in Adobe user, we will be reviewing the ex
 
 #### Authentication
 
-Integrations that require access to a logged in Adobe user and their stored data should implement an appropriate authentication workflow, usually OAuth 2.0. 
+Integrations that require access to a logged in Adobe user and their stored data should implement an appropriate authentication workflow, usually OAuth 2.0.
 
-The user must also be able to log out of their Adobe account from your integration. 
+The user must also be able to log out of their Adobe account from your integration.
 
 Your users can also revoke access from your application on the [Connected accounts page](https://account.adobe.com/connected-accounts) of their Adobe account.
 
 #### Authorization
 
-After the user first logs in to your integration, they will be prompted to authorize access to their data with a consent screen. 
+After the user first logs in to your integration, they will be prompted to authorize access to their data with a consent screen.
 
 The consent screen must present correct and complete information to the user about you, the publisher, and the integration. This data is set when you submit your publisher profile and integration details via the [Adobe Developer Console](https://console.adobe.io) (see the Metadata section of this page for details).
 
@@ -109,13 +114,13 @@ See our ["Marketing your integration"](../marketing) page for guidelines on usin
 
 #### Inappropriate content
 
-Your integration and associated marketing surfaces must not include any intense violence, blood, gore, sexual content, nudity, or strong language. 
+Your integration and associated marketing surfaces must not include any intense violence, blood, gore, sexual content, nudity, or strong language.
 
 Your integration must not promote or conduct phishing, spamming, hacking, password trafficking, or spyware, nor contain malware, trojans, or viruses.
 
 ### User experience
 
-Checking the integration's user experience is the core of our review process. 
+Checking the integration's user experience is the core of our review process.
 
 Since all applications and integrations are different, there are fewer concrete guidelines we can provide. However, we are generally looking at these three things: functionality, user interface, and performance.
 
@@ -125,22 +130,22 @@ Since all applications and integrations are different, there are fewer concrete 
 
 ## How to submit
 
-You can submit your integration for approval and review on the [Adobe Developer Console](https://console.adobe.io). 
+You can submit your integration for approval and review on the [Adobe Developer Console](https://console.adobe.io).
 
 The following is a basic overview of the steps:
 
 1. [Visit the Adobe Developer Console](https://console.adobe.io)
 2. Go to the _Projects_ tab
 3. Find and select the project that contains the Client ID you are seeking production approval for
-3. On your project page, select _Approval_
-4. (First time only) Complete your publisher profile via the "View public profile" button, and save
-5. Fill out the "Submit for approval" form, and submit
+4. On your project page, select _Approval_
+5. (First time only) Complete your publisher profile via the "View public profile" button, and save
+6. Fill out the "Submit for approval" form, and submit
 
 Further details on the data you are required to sumbit can be found in the [Pre-submission checklist](#pre-submission-checklist) section of this page.
 
 ## Timelines and outcomes
 
-We aim to respond to all submissions within 10 business days, but we are typically much faster on average. 
+We aim to respond to all submissions within 10 business days, but we are typically much faster on average.
 
 Ultimately, your submission will either be approved or rejected. In some cases, we may reach out to you with questions before we send you the outcome of the review.
 

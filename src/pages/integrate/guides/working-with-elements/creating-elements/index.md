@@ -45,20 +45,20 @@ strictly required; the default relationship is "rendition."
 
 ```json
 {
-    "name": "my-cool-graphic",
-    "type": "application/vnd.adobe.element.image+dcx",
-    "client": {
-        "deviceId": "MY_COOL_DEVICE_ID",
-        "device": "MY_COOL_DEVICE",
-        "app": "MY_COOL_APP"
-    },
-    "representations": [
-        {
-            "type": "image/svg+xml",
-            "relationship": "primary",
-            "storage_href": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/3f4d2883-f7e5-4d64-bec1-f153ae5d80af"
-        }
-    ]
+  "name": "my-cool-graphic",
+  "type": "application/vnd.adobe.element.image+dcx",
+  "client": {
+    "deviceId": "MY_COOL_DEVICE_ID",
+    "device": "MY_COOL_DEVICE",
+    "app": "MY_COOL_APP"
+  },
+  "representations": [
+    {
+      "type": "image/svg+xml",
+      "relationship": "primary",
+      "storage_href": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/3f4d2883-f7e5-4d64-bec1-f153ae5d80af"
+    }
+  ]
 }
 ```
 
@@ -75,60 +75,60 @@ properties.
 User-uploaded assets are files that are uploaded before the library element is created, and the library element should
 contain a link to that file. In other words, the recommended pattern for creating any library element that contains
 user-uploaded assets is to upload all the assets first, then create the library element referencing them using a single
-call to the CC libraries service. The steps to upload assets change depending on the size of the file; files under 5mb
+call to the Libraries service. The steps to upload assets change depending on the size of the file; files under 5mb
 in size may be uploaded in one shot, files over 5mb must be broken into chunks.
 
 User-uploaded asset representations require, alongside
 a "type" property, either a "storage_href" or "path" property, but not both. The "storage_href" property should contain
-an absolute link to the asset in CC storage, and "path" should contain the relative path to the asset (TODO: ?? & explain this).
+an absolute link to the asset in Creative Cloud storage, and "path" should contain the relative path to the asset (TODO: ?? & explain this).
 Figure 1 contains an example of a valid asset representation.
 
 #### Self-contained Assets
 
 _Self-contained_ assets refer to assets that are entirely contained within the library element representation metadata.
-In this case, only a single call to the CC library service is needed. An example might be a json document describing a color.
+In this case, only a single call to the Library service is needed. An example might be a json document describing a color.
 Self-contained assets will always contain a required namespaced property, e.g., for colors, "color#data". The requirements
 for these properties will vary by representation type.
 
 ```json
 {
-	"name": "my-cooler-color",
-	"type": "application/vnd.adobe.element.color+dcx",
-	"client": {
-		"deviceId": "MY_COOL_DEVICE_ID",
-		"device": "MY_COOL_DEVICE",
-		"app": "MY_COOL_APP"
-	},
-	"representations": [
-		{
-		    "type": "application/vnd.adobe.color+json",
-		    "relationship": "primary",
-		    "color#data": {
-		        "mode": "CMYK",
-		        "value": {
-	                "c": 100,
-	                "m": 79.0585160255432,
-	                "y": 39.5178139209747,
-	                "k": 31.2565803527832
-		        },
-		        "type": "process"
-		    }
-		},
-		{
-	        "id": "fe595a93-aefc-4e2f-a6a7-d594610f292f",
-	        "type": "application/vnd.adobe.color+json",
-	        "relationship": "rendition",
-	        "color#data": {
-	            "mode": "RGB",
-	            "value": {
-	                "r": 12.7313232421875,
-	                "g": 56.0341644287109,
-	                "b": 89.8001861572266
-	            },
-	            "type": "process"
-	        }
-	    }
-	]
+  "name": "my-cooler-color",
+  "type": "application/vnd.adobe.element.color+dcx",
+  "client": {
+    "deviceId": "MY_COOL_DEVICE_ID",
+    "device": "MY_COOL_DEVICE",
+    "app": "MY_COOL_APP"
+  },
+  "representations": [
+    {
+      "type": "application/vnd.adobe.color+json",
+      "relationship": "primary",
+      "color#data": {
+        "mode": "CMYK",
+        "value": {
+          "c": 100,
+          "m": 79.0585160255432,
+          "y": 39.5178139209747,
+          "k": 31.2565803527832
+        },
+        "type": "process"
+      }
+    },
+    {
+      "id": "fe595a93-aefc-4e2f-a6a7-d594610f292f",
+      "type": "application/vnd.adobe.color+json",
+      "relationship": "rendition",
+      "color#data": {
+        "mode": "RGB",
+        "value": {
+          "r": 12.7313232421875,
+          "g": 56.0341644287109,
+          "b": 89.8001861572266
+        },
+        "type": "process"
+      }
+    }
+  ]
 }
 ```
 
@@ -154,7 +154,7 @@ First, we would upload the thumbnail:
 
 POST /api/v1/libraries/{{library-id}}/representations/content
 
-```
+```json
 (form-data)
 Representation-Data: {"type":"image/png"}
 Representation-Content: <... the file ...>
@@ -250,140 +250,140 @@ GET /api/v1/libraries/{{library-id}}/elements/9e46e07f-f9c1-4380-b199-754c1f6ffb
 
 ```json
 {
-    "id": "9e46e07f-f9c1-4380-b199-754c1f6ffb9c",
-    "name": "my-coolest-font",
-    "created_date": 1590014039430,
-    "modified_date": 1590014039432,
-    "type": "application/vnd.adobe.element.font+dcx",
-    "thumbnail": {
-        "type": "href",
-        "rendition": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/22fd8c85-eb35-47bc-aa0d-379497e7414e/:rendition;size=200"
-    },
-    "representations": [
-        {
-            "id": "22fd8c85-eb35-47bc-aa0d-379497e7414e",
-            "type": "image/png",
-            "relationship": "rendition",
-            "path": "84688801-5e6e-466e-a896-fd69188d9904",
-            "is_full_size": false,
-            "is_external_link": false,
-            "content_length": 158356,
-            "version": "0",
-            "md5": "m0+2JrLqaUzs7aG1yqdGPA==",
-            "_links": {
-                "http://ns.adobe.com/melville/rel/primary": {
-                    "href": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/22fd8c85-eb35-47bc-aa0d-379497e7414e",
-                    "rel": "http://ns.adobe.com/melville/rel/primary",
-                    "type": "image/png",
-                    "templated": false
-                },
-                "http://ns.adobe.com/melville/rel/path": {
-                    "href": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/22fd8c85-eb35-47bc-aa0d-379497e7414e",
-                    "rel": "http://ns.adobe.com/melville/rel/path",
-                    "type": "image/png",
-                    "templated": false
-                },
-                "http://ns.adobe.com/melville/rel/rendition": {
-                    "href": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/22fd8c85-eb35-47bc-aa0d-379497e7414e/:rendition{;page,size,version}",
-                    "rel": "http://ns.adobe.com/melville/rel/rendition",
-                    "templated": true
-                },
-                "http://ns.adobe.com/melville/rel/version-history": {
-                    "href": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/22fd8c85-eb35-47bc-aa0d-379497e7414e/:paged_versions{?order,orderby,start,limit,property}",
-                    "rel": "http://ns.adobe.com/melville/rel/version-history",
-                    "type": "application/vnd.adobe.versions+json",
-                    "templated": true
-                },
-                "http://ns.adobe.com/melville/rel/raw": {
-                    "href": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/22fd8c85-eb35-47bc-aa0d-379497e7414e{;version}/:raw",
-                    "rel": "http://ns.adobe.com/melville/rel/raw",
-                    "templated": true
-                }
-            },
-            "etag": "\"9b4fb626b2ea694ceceda1b5caa7463c\"",
-            "storage_href": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/22fd8c85-eb35-47bc-aa0d-379497e7414e",
-            "representation_order": 1,
-            "is_preferred_thumbnail": false,
-            "is_component": true,
-            "is_external_link": false,
-            "state": "unmodified",
-            "name": "7f95b8e0-5f88-4ba0-8404-82ed3ce90ed5"
-        },
-        {
-            "id": "3cebe682-a820-4b47-a267-f124dcde0941",
-            "type": "application/vnd.adobe.font+json",
-            "relationship": "primary",
-            "is_full_size": false,
-            "is_external_link": false,
-            "is_preferred_thumbnail": false,
-            "is_component": false,
-            "is_external_link": false,
-            "library#isExternalLink": false,
-            "font#data": {
-                "foundry": "The FooBaz Corporation",
-                "postScriptName": "TimesNewRomanPS-BoldMT",
-                "name": "Times New Roman Bold",
-                "style": "Bold",
-                "family": "Times New Roman",
-                "typekitFontId": "some_meaningful_uuid"
-            }
-        }
-    ],
-    "assetSubType": "element",
-    "_fc": true,
-    "_links": {
+  "id": "9e46e07f-f9c1-4380-b199-754c1f6ffb9c",
+  "name": "my-coolest-font",
+  "created_date": 1590014039430,
+  "modified_date": 1590014039432,
+  "type": "application/vnd.adobe.element.font+dcx",
+  "thumbnail": {
+    "type": "href",
+    "rendition": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/22fd8c85-eb35-47bc-aa0d-379497e7414e/:rendition;size=200"
+  },
+  "representations": [
+    {
+      "id": "22fd8c85-eb35-47bc-aa0d-379497e7414e",
+      "type": "image/png",
+      "relationship": "rendition",
+      "path": "84688801-5e6e-466e-a896-fd69188d9904",
+      "is_full_size": false,
+      "is_external_link": false,
+      "content_length": 158356,
+      "version": "0",
+      "md5": "m0+2JrLqaUzs7aG1yqdGPA==",
+      "_links": {
         "http://ns.adobe.com/melville/rel/primary": {
-            "href": "/api/v1/libraries/urn:aaid:sc:us:efb1969b-fed5-4381-836e-6d7a97a14fbf/elements/9e46e07f-f9c1-4380-b199-754c1f6ffb9c",
-            "rel": "http://ns.adobe.com/melville/rel/primary",
-            "type": "application/json",
-            "templated": false
+          "href": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/22fd8c85-eb35-47bc-aa0d-379497e7414e",
+          "rel": "http://ns.adobe.com/melville/rel/primary",
+          "type": "image/png",
+          "templated": false
         },
         "http://ns.adobe.com/melville/rel/path": {
-            "href": "/api/v1/libraries/urn:aaid:sc:us:efb1969b-fed5-4381-836e-6d7a97a14fbf/elements/9e46e07f-f9c1-4380-b199-754c1f6ffb9c",
-            "rel": "http://ns.adobe.com/melville/rel/path",
-            "type": "application/json",
-            "templated": false
-        },
-        "http://ns.adobe.com/melville/rel/id": {
-            "href": "/api/v1/libraries/urn:aaid:sc:us:efb1969b-fed5-4381-836e-6d7a97a14fbf/elements/9e46e07f-f9c1-4380-b199-754c1f6ffb9c",
-            "rel": "http://ns.adobe.com/melville/rel/id",
-            "type": "application/json",
-            "templated": false
-        },
-        "http://ns.adobe.com/melville/rel/describedBy": {
-            "href": "/api/v1/libraries/urn:aaid:sc:us:efb1969b-fed5-4381-836e-6d7a97a14fbf/elements/9e46e07f-f9c1-4380-b199-754c1f6ffb9c",
-            "rel": "http://ns.adobe.com/melville/rel/describedBy",
-            "type": "application/json",
-            "templated": false
+          "href": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/22fd8c85-eb35-47bc-aa0d-379497e7414e",
+          "rel": "http://ns.adobe.com/melville/rel/path",
+          "type": "image/png",
+          "templated": false
         },
         "http://ns.adobe.com/melville/rel/rendition": {
-            "href": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/22fd8c85-eb35-47bc-aa0d-379497e7414e/:rendition{;size}",
-            "rel": "http://ns.adobe.com/melville/rel/rendition",
-            "templated": true
+          "href": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/22fd8c85-eb35-47bc-aa0d-379497e7414e/:rendition{;page,size,version}",
+          "rel": "http://ns.adobe.com/melville/rel/rendition",
+          "templated": true
         },
-        "http://ns.adobe.com/melville/rel/representations": {
-            "href": "/api/v1/libraries/urn:aaid:sc:us:efb1969b-fed5-4381-836e-6d7a97a14fbf/elements/9e46e07f-f9c1-4380-b199-754c1f6ffb9c?selector=representations",
-            "rel": "http://ns.adobe.com/melville/rel/representations",
-            "type": "application/json",
-            "templated": false
+        "http://ns.adobe.com/melville/rel/version-history": {
+          "href": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/22fd8c85-eb35-47bc-aa0d-379497e7414e/:paged_versions{?order,orderby,start,limit,property}",
+          "rel": "http://ns.adobe.com/melville/rel/version-history",
+          "type": "application/vnd.adobe.versions+json",
+          "templated": true
+        },
+        "http://ns.adobe.com/melville/rel/raw": {
+          "href": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/22fd8c85-eb35-47bc-aa0d-379497e7414e{;version}/:raw",
+          "rel": "http://ns.adobe.com/melville/rel/raw",
+          "templated": true
         }
+      },
+      "etag": "\"9b4fb626b2ea694ceceda1b5caa7463c\"",
+      "storage_href": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/22fd8c85-eb35-47bc-aa0d-379497e7414e",
+      "representation_order": 1,
+      "is_preferred_thumbnail": false,
+      "is_component": true,
+      "is_external_link": false,
+      "state": "unmodified",
+      "name": "7f95b8e0-5f88-4ba0-8404-82ed3ce90ed5"
     },
-    "parent_id": "urn:aaid:sc:us:efb1969b-fed5-4381-836e-6d7a97a14fbf",
-    "details": {
-        "created": {
-            "userId": "35305C3E5E861DB40A494026@AdobeID",
-            "deviceId": "MY_COOL_DEVICE_ID",
-            "device": "MY_COOL_DEVICE",
-            "app": "MY_COOL_APP"
-        },
-        "lastModified": {
-            "userId": "35305C3E5E861DB40A494026@AdobeID",
-            "deviceId": "MY_COOL_DEVICE_ID",
-            "device": "MY_COOL_DEVICE",
-            "app": "MY_COOL_APP",
-            "time": 1590014039432
-        }
+    {
+      "id": "3cebe682-a820-4b47-a267-f124dcde0941",
+      "type": "application/vnd.adobe.font+json",
+      "relationship": "primary",
+      "is_full_size": false,
+      "is_external_link": false,
+      "is_preferred_thumbnail": false,
+      "is_component": false,
+      "is_external_link": false,
+      "library#isExternalLink": false,
+      "font#data": {
+        "foundry": "The FooBaz Corporation",
+        "postScriptName": "TimesNewRomanPS-BoldMT",
+        "name": "Times New Roman Bold",
+        "style": "Bold",
+        "family": "Times New Roman",
+        "typekitFontId": "some_meaningful_uuid"
+      }
     }
+  ],
+  "assetSubType": "element",
+  "_fc": true,
+  "_links": {
+    "http://ns.adobe.com/melville/rel/primary": {
+      "href": "/api/v1/libraries/urn:aaid:sc:us:efb1969b-fed5-4381-836e-6d7a97a14fbf/elements/9e46e07f-f9c1-4380-b199-754c1f6ffb9c",
+      "rel": "http://ns.adobe.com/melville/rel/primary",
+      "type": "application/json",
+      "templated": false
+    },
+    "http://ns.adobe.com/melville/rel/path": {
+      "href": "/api/v1/libraries/urn:aaid:sc:us:efb1969b-fed5-4381-836e-6d7a97a14fbf/elements/9e46e07f-f9c1-4380-b199-754c1f6ffb9c",
+      "rel": "http://ns.adobe.com/melville/rel/path",
+      "type": "application/json",
+      "templated": false
+    },
+    "http://ns.adobe.com/melville/rel/id": {
+      "href": "/api/v1/libraries/urn:aaid:sc:us:efb1969b-fed5-4381-836e-6d7a97a14fbf/elements/9e46e07f-f9c1-4380-b199-754c1f6ffb9c",
+      "rel": "http://ns.adobe.com/melville/rel/id",
+      "type": "application/json",
+      "templated": false
+    },
+    "http://ns.adobe.com/melville/rel/describedBy": {
+      "href": "/api/v1/libraries/urn:aaid:sc:us:efb1969b-fed5-4381-836e-6d7a97a14fbf/elements/9e46e07f-f9c1-4380-b199-754c1f6ffb9c",
+      "rel": "http://ns.adobe.com/melville/rel/describedBy",
+      "type": "application/json",
+      "templated": false
+    },
+    "http://ns.adobe.com/melville/rel/rendition": {
+      "href": "https://cc-api-storage-stage.adobe.io/assets/adobe-libraries/4dc522a7-af3d-4274-986c-bb1f59bb20d0/22fd8c85-eb35-47bc-aa0d-379497e7414e/:rendition{;size}",
+      "rel": "http://ns.adobe.com/melville/rel/rendition",
+      "templated": true
+    },
+    "http://ns.adobe.com/melville/rel/representations": {
+      "href": "/api/v1/libraries/urn:aaid:sc:us:efb1969b-fed5-4381-836e-6d7a97a14fbf/elements/9e46e07f-f9c1-4380-b199-754c1f6ffb9c?selector=representations",
+      "rel": "http://ns.adobe.com/melville/rel/representations",
+      "type": "application/json",
+      "templated": false
+    }
+  },
+  "parent_id": "urn:aaid:sc:us:efb1969b-fed5-4381-836e-6d7a97a14fbf",
+  "details": {
+    "created": {
+      "userId": "35305C3E5E861DB40A494026@AdobeID",
+      "deviceId": "MY_COOL_DEVICE_ID",
+      "device": "MY_COOL_DEVICE",
+      "app": "MY_COOL_APP"
+    },
+    "lastModified": {
+      "userId": "35305C3E5E861DB40A494026@AdobeID",
+      "deviceId": "MY_COOL_DEVICE_ID",
+      "device": "MY_COOL_DEVICE",
+      "app": "MY_COOL_APP",
+      "time": 1590014039432
+    }
+  }
 }
 ```
 

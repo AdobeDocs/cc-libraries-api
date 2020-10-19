@@ -1,10 +1,10 @@
 # How to get your developer credentials
 
-Before using the CC Libraries API you'll need to get your developer credentials.
+Before using the Libraries API you'll need to get your developer credentials.
 
 Specifically, you'll need to get your _Client ID_ (also referred to as an _API Key_) and _Client Secret_ from the Adobe Developer Console.
 
-These credentials will be used when calling the CC Libraries API to identify your application to Adobe and let your users make informed decisions about granting your application access to their data.
+These credentials will be used when calling the Libraries API to identify your application to Adobe and let your users make informed decisions about granting your application access to their data.
 
 In this tutorial, we'll show you how to get your credentials from the Adobe Developer Console as well as an easy way to get your own user access token for use during development.
 
@@ -30,7 +30,7 @@ Visit the [Adobe Developer Console](https://console.adobe.io/) and log in with y
 ### Add an API to your project
 
 1. Click the "Add to Project" button in the upper left hand corner and select "API".
-2. Select the "CC Libraries" card from the list and hit "Next" in the lower right hand corner.
+2. Select the "Creative Cloud Libraries" card from the list and hit "Next" in the lower right hand corner.
 3. Follow the steps in the "Add an authentication method" section just below.
 
 ### Add an authentication method to your project
