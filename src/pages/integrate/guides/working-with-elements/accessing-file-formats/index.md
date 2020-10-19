@@ -53,7 +53,7 @@ curl --location --request GET 'https://cc-libraries.adobe.io/api/v1/libraries/{l
 
 <InlineAlert variant="info" slots="text"/>
 
-**IMPORTANT** Using selectors can impact performance so use them sparingly and only when they are the only option for getting the required data.
+**IMPORTANT** Using selectors can increase the response time of API calls so use them sparingly and only when they are the only option for getting the required data.
 
 That returns a JSON object that includes some basic metadata about the element as well as an array of any representations. Each representation is made up of an asset (usually a file) and has the following properties:
 
