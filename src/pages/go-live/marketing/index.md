@@ -3,7 +3,7 @@ title: Marketing—Creative Cloud Libraries API
 description: Get the Adobe Developer Brand Guide for tips and guidelines on marketing your Creative Cloud Libraries integration.
 ---
 
-# Marketing Your Plugin
+# Marketing Your Integration
 
 The Adobe Creative Cloud Developer Brand Guide provides an overview of Adobe brand assets that may be used to market developer integrations. They are your guide for proper usage of Adobe branding and product names within and/or in conjunction with your products and marketing efforts.
 
