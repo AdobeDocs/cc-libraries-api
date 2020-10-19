@@ -1,14 +1,14 @@
 # Getting Library and Element Data
 
-Any integration with the CC Libraries API is most likely going to involve reading information about a user's stored libraries and elements. For example, you may want answers to questions like:
+Any integration with the Libraries API is most likely going to involve reading information about a user's stored libraries and elements. For example, you may want answers to questions like:
 
 - What libraries or elements were created in the last week?
 - What is the name of each element in a given library?
 - Where is the thumbnail for a given library element?
 
-As you might imagine, you can accomplish all of this and much more with `GET` requests to the CC Libaries API.
+As you might imagine, you can accomplish all of this and much more with `GET` requests to the Libraries API.
 
-Depending on your use case, you may prefer to make your CC Libraries API calls from the client or from your server. In this tutorial, we're going to focus on how to make calls from your server with Node.js and Express.
+Depending on your use case, you may prefer to make your Libraries API calls from the client or from your server. In this tutorial, we're going to focus on how to make calls from your server with Node.js and Express.
 
 In each step, we'll set up an Express route to make an API call and talk a little about the response we get. The accompanying sample repo will embellish slightly on what we cover here by making simple use of the API responses in the browser.
 
@@ -59,9 +59,9 @@ npm start
 
 In your browser, if you navigate to `localhost:3000`, you'll see the default home page created by `express-generator`. (We won't be working with UI in this tutorial, but the accompanying sample repo makes very basic use of the API responses in the browser.)
 
-### 2. Get metadata about your user's CC Libraries
+### 2. Get metadata about your user's Libraries
 
-We'll get started with the CC Libraries API by getting a top-level view of the libraries that the user has stored.
+We'll get started with the Libraries API by getting a top-level view of the libraries that the user has stored.
 
 **Creating the route**
 
@@ -77,7 +77,7 @@ const baseURL = "https://cc-libraries.adobe.io/api/v1/libraries";
 
 // The default GET route provided by express-generator
 router.get("/", async (req, res, next) => {
-  res.render("index", { title: "CC Libraries API" });
+  res.render("index", { title: "Creative Cloud Libraries API" });
 });
 
 // Our new route
@@ -113,7 +113,7 @@ const response = await axios.get(baseURL, options);
 res.json(response.data);
 ```
 
-If everything goes well, we'll get a response from the CC Libraries API that contains JSON data (in this example, within `response.data`) that we return to the browser.
+If everything goes well, we'll get a response from the Libraries API that contains JSON data (in this example, within `response.data`) that we return to the browser.
 
 **Try it out**
 
@@ -134,7 +134,7 @@ The response will look something like this:
 }
 ```
 
-The `libraries` array contains a JSON object full of metadata related to each of your user's CC Libraries. Each object in this array will have a unique `id` property for that specific library:
+The `libraries` array contains a JSON object full of metadata related to each of your user's Libraries. Each object in this array will have a unique `id` property for that specific library:
 
 ```
 {
@@ -148,13 +148,13 @@ The `libraries` array contains a JSON object full of metadata related to each of
 
 Go ahead and copy an `id` from one of your libraries. We'll use it in the next step.
 
-### 3. Get metadata for elements in a specific CC Library
+### 3. Get metadata for elements in a specific Library
 
 Next we'll get a list of elements contained in a given library.
 
 **Creating the route**
 
-Back in `routes/index.js`, we'll create a route for retreiving metadata for a specific CC Library's elements:
+Back in `routes/index.js`, we'll create a route for retreiving metadata for a specific Library's elements:
 
 ```javascript
 router.get("/cc-libraries/data/:libraryId", async (req, res, next) => {
@@ -182,14 +182,14 @@ router.get("/cc-libraries/data/:libraryId", async (req, res, next) => {
 
 **What it does**
 
-Our route above takes a `libraryId` parameter. This parameter is then used to create the CC Libraries API endpoint we want to call:
+Our route above takes a `libraryId` parameter. This parameter is then used to create the Libraries API endpoint we want to call:
 
 ```javascript
 `${baseURL}/${libraryId}/elements`;
 // Or, https://cc-libraries.adobe.io/api/v1/libraries/AAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA/elements
 ```
 
-As in the first route, we use the `axios` module to make the HTTP request. If the request is successful, we get a JSON object from the CC Libraries API that we send back to the browser.
+As in the first route, we use the `axios` module to make the HTTP request. If the request is successful, we get a JSON object from the Libraries API that we send back to the browser.
 
 **Try it out**
 
@@ -210,7 +210,7 @@ The response will look something like this:
 }
 ```
 
-The `elements` array contains a JSON object full of metadata related to each of the elements stored in a given CC Library:
+The `elements` array contains a JSON object full of metadata related to each of the elements stored in a given Library:
 
 ```json
 {
@@ -221,7 +221,7 @@ The `elements` array contains a JSON object full of metadata related to each of 
   "type": "application/vnd.adobe.element.pattern+dcx",
   "thumbnail": {},
   "groups": [],
-  "assetSubType": "element",
+  "assetSubType": "element"
 }
 ```
 
@@ -234,7 +234,7 @@ Next we'll get an image rendition for a specific element.
 
 **Creating the route**
 
-Back in `routes/index.js`, we'll create a route for retreiving an image representation of a CC Library element:
+Back in `routes/index.js`, we'll create a route for retreiving an image representation of a Library element:
 
 ```javascript
 router.get("/cc-libraries/image", async (req, res, next) => {
@@ -271,7 +271,7 @@ const getBase64dataUrl = (response) => {
 ```
 
 > **Info**
-> Note that above, for simplicity we are naively slicing off from the `url` query the rendition argument the CC Libraries API provides by default, which is `:rendition;size=200`. Slicing this off gives you a full-size image, which in many cases may not be ideal due to size. If you have a specific size in mind, you can change `200` to another value, or keep the query in tact.
+> Note that above, for simplicity we are naively slicing off from the `url` query the rendition argument the Libraries API provides by default, which is `:rendition;size=200`. Slicing this off gives you a full-size image, which in many cases may not be ideal due to size. If you have a specific size in mind, you can change `200` to another value, or keep the query in tact.
 
 **What it does**
 
@@ -284,7 +284,7 @@ const response = await axios.get(url, options);
 Again, we use the `axios` module to make the HTTP request. If the request is successful, we receive image data that we can do further work with.
 
 > **Info**
-> Note that, unlike in our previous routes, here we are not using the CC Libraries API `baseURL` variable that we defined earlier. Images come from another service which we will call directly.
+> Note that, unlike in our previous routes, here we are not using the Libraries API `baseURL` variable that we defined earlier. Images come from another service which we will call directly.
 
 The route will then transform the response data from an array buffer to a base64 data URL (`dataUrl`) that can be used as the `src` of an image element in the browser. This step is just for the purpose of demonstration; you might have other uses for the image data.
 

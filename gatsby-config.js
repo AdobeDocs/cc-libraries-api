@@ -24,7 +24,7 @@ module.exports = {
     globalNav,
     pages: [
       {
-        title: "CC Libraries API",
+        title: "Creative Cloud Libraries API",
         path: "/",
       },
       {
@@ -54,7 +54,7 @@ module.exports = {
         path: "/overview/",
         pages: [
           {
-            title: "What are CC Libraries?",
+            title: "What are Creative Cloud Libraries?",
             path: "/overview/product-overview/",
           },
           {

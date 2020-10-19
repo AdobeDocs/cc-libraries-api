@@ -1,4 +1,4 @@
-# Sample CC Libraries
+# Sample Creative Cloud Libraries
 
 Need some sample Library content to experiment with?
 

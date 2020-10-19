@@ -1,6 +1,6 @@
 # Quick Start: cURL
 
-Welcome to the CC Libraries API!
+Welcome to the Creative Cloud Libraries API!
 
 In this Quick Start tutorial, we'll be walking you towards making your first API call via the cURL command-line tool. By the end you'll have constructed a command that looks like this:
 
@@ -11,7 +11,7 @@ curl --location --request GET \
   -H 'Authorization: Bearer <ACCESS_TOKEN_HERE>'
 ```
 
-This API call will return information about the libraries you have stored in CC Libraries:
+This API call will return information about the libraries you have stored in Libraries:
 
 ```json
 {
@@ -23,7 +23,7 @@ This API call will return information about the libraries you have stored in CC 
 }
 ```
 
-By starting with this basic cURL command, you'll have an idea of what's required to make `GET` requests to the CC Libraries API. From there, you can play with the command to make `GET` requests to different endpoints from the command line, or translate these concepts to your environment of choice, like Node.js or Python.
+By starting with this basic cURL command, you'll have an idea of what's required to make `GET` requests to the Libraries API. From there, you can play with the command to make `GET` requests to different endpoints from the command line, or translate these concepts to your environment of choice, like Node.js or Python.
 
 ## Technology Used
 
@@ -38,7 +38,7 @@ By starting with this basic cURL command, you'll have an idea of what's required
 
 **Assets**
 
-- At least one CC Library associated with your Adobe ID.
+- At least one Library associated with your Adobe ID.
 - A terminal application for a UNIX-based system (like macOS, Linux, or Windows Subsystem for Linux)
 
 ## Development Steps
@@ -63,7 +63,7 @@ You're ready to make your first API call! Just paste this command into your term
 
 ### 2. Get results
 
-Since you've sent a `GET` request to the `/libraries` endpoint, you can probably guess that you're going to get back information about the libraries you have stored in CC Libraries—and you're right!
+Since you've sent a `GET` request to the `/libraries` endpoint, you can probably guess that you're going to get back information about the libraries you have stored in Creative Cloud Libraries—and you're right!
 
 The response will look something like this:
 

@@ -1,10 +1,10 @@
 # Quick Start: Node.js
 
-Welcome to the CC Libraries API!
+Welcome to the Creative Cloud Libraries API!
 
-In this Quick Start tutorial, we'll be walking you towards making your first API call from a Node.js script. By the end you'll have a self-invoking function that makes a call to the CC Libraries API when you run the script.
+In this Quick Start tutorial, we'll be walking you towards making your first API call from a Node.js script. By the end you'll have a self-invoking function that makes a call to the Libraries API when you run the script.
 
-This API call will return information about the libraries you have stored in CC Libraries:
+This API call will return information about the libraries you have stored in Libraries:
 
 ```
 {
@@ -16,7 +16,7 @@ This API call will return information about the libraries you have stored in CC 
 }
 ```
 
-By starting with this basic Node.js script, you'll have an idea of what's required to make `GET` requests to the CC Libraries API. From there, you can play with the script to make `GET` requests to different endpoints from Node.js, or translate these concepts to your environment of choice, with Node.js server frameworks like Express and beyond.
+By starting with this basic Node.js script, you'll have an idea of what's required to make `GET` requests to the Libraries API. From there, you can play with the script to make `GET` requests to different endpoints from Node.js, or translate these concepts to your environment of choice, with Node.js server frameworks like Express and beyond.
 
 ## Before you start
 
@@ -35,7 +35,7 @@ By starting with this basic Node.js script, you'll have an idea of what's requir
 
 **Assets**
 
-- At least one CC Library associated with your Adobe ID.
+- At least one Library associated with your Adobe ID.
 - A terminal application for a UNIX-based system (like macOS, Linux, or Windows Subsystem for Linux)
 
 ## Development Steps

@@ -1,6 +1,6 @@
 # How to get access tokens with OAuth
 
-All calls to the CC Libraries API must include an access token in the headers.
+All calls to the Libraries API must include an access token in the headers.
 
 In a production integration, you can get a user's access token through an OAuth 2.0 workflow.
 
