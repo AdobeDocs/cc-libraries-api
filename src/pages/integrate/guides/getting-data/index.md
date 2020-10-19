@@ -1,6 +1,8 @@
 # Getting Library and Element Data
 
-Any integration with the Libraries API is most likely going to involve reading information about a user's stored libraries and elements. For example, you may want answers to questions like:
+Any integration with the Libraries API will involve reading information about a user's stored libraries and elements.
+
+For example, you may want answers to questions like:
 
 - What libraries or elements were created in the last week?
 - What is the name of each element in a given library?
@@ -119,13 +121,13 @@ If everything goes well, we'll get a response from the Libraries API that contai
 
 You can access this endpoint by navigating your browser to:
 
-```
+```shell
 http://localhost:3000/cc-libraries/data
 ```
 
 The response will look something like this:
 
-```
+```json
 {
   "total_count": 2,
   "libraries": [
@@ -136,7 +138,7 @@ The response will look something like this:
 
 The `libraries` array contains a JSON object full of metadata related to each of your user's Libraries. Each object in this array will have a unique `id` property for that specific library:
 
-```
+```json
 {
   "id": "AAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA",
   "name": "My Libraray",
@@ -195,7 +197,7 @@ As in the first route, we use the `axios` module to make the HTTP request. If th
 
 You can access this endpoint by navigating your browser to this URL (be sure to swap in the library ID you copied in the previous step):
 
-```
+```shell
 http://localhost:3000/cc-libraries/data/AAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA
 ```
 
@@ -292,13 +294,13 @@ The route will then transform the response data from an array buffer to a base64
 
 You can access this endpoint by navigating your browser to this URL (be sure to swap in the thumbnail URL you copied in the previous step):
 
-```
+```shell
 http://localhost:3000/cc-libraries/image?url=https://url-here
 ```
 
 Your browser will receive a base64 string representing the image data. Since we haven't set up an image element to display the image data, you'll need to have a look in your browser's developer tools to see the data. In Chome DevTools for example, you can find the data string in the _Sources_ tab, under _top > localhost:{port} > cc-libraries > image?url=https://url-here_:
 
-```
+```base64
 data:image/jpeg;base64,base64stringhere...
 ```
 

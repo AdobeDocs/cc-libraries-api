@@ -154,7 +154,7 @@ First, we would upload the thumbnail:
 
 POST /api/v1/libraries/{{library-id}}/representations/content
 
-```
+```json
 (form-data)
 Representation-Data: {"type":"image/png"}
 Representation-Content: <... the file ...>

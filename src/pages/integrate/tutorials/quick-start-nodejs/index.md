@@ -6,7 +6,7 @@ In this Quick Start tutorial, we'll be walking you towards making your first API
 
 This API call will return information about the libraries you have stored in Libraries:
 
-```
+```json
 {
   "total_count": 2,
   "libraries": [
@@ -54,7 +54,7 @@ echo .env >> .gitignore # Don't track your .env file in version control
 
 In our [How to get your developer credentials](./how-to-get-your-developer-credentials.md) tutorial, we showed you how to get your API key from the Adobe Developer Console and user access token from the OAuth 2.0 Playground. You can take both of those values and add them to their respective variables in the `.env` file as seen below. Don't include the angle brackets (`< >`) in your values:
 
-```
+```env
 API_KEY=<CLIENT_ID_HERE>
 ACCESS_TOKEN=<ACCESS_TOKEN_HERE>
 ```
@@ -151,7 +151,7 @@ This is the last step, where we'll embellish on the basic setup we've done so fa
 
 A success response will look something like this:
 
-```
+```json
 {
   "total_count": 2,
   "libraries": [
