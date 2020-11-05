@@ -14,11 +14,4 @@ The Adobe Creative Cloud Developer Brand Guide is undergoing a refresh with new 
 **Coming soon**
 
 - New Adobe Creative Cloud Developer Brand Guide
-- “Designed for” Adobe product badges:
-  - Adobe XD
-  - Adobe Photoshop
-  - Adobe Illustrator
-  - Adobe InDesign
-  - Adobe Premiere Pro
-  - Adobe After Effects
-  - And more!
+- "Designed for Creative Cloud" badge

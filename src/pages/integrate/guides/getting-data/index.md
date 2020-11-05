@@ -305,11 +305,3 @@ data:image/jpeg;base64,base64stringhere...
 ```
 
 If we wanted to display the image, this base64 data URL (`dataUrl`) could be used as the `src` of an image element. In fact, the accompanying sample repo does this if it's something you're interested in seeing.
-
-## Next Steps
-
-- [Creating Library Elements](./tutorials/creating-library-elements.md)
-
-## Other Resources
-
-- [Endpoint references](https://cc-libraries-api.github.io/open-api/)

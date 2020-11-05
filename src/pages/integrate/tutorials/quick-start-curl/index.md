@@ -78,11 +78,3 @@ The response will look something like this:
 ```
 
 Always check [the references](https://cc-libraries-api.github.io/open-api/) for the full details on any request or response.
-
-## Next Steps
-
-- [Quick Start: Node.js](./quick-start-nodejs.md)
-
-## Other Resources
-
-- [Endpoint references](https://cc-libraries-api.github.io/open-api/)

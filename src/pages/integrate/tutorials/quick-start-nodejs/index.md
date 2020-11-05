@@ -162,12 +162,3 @@ A success response will look something like this:
 ```
 
 Always check [the references](https://cc-libraries-api.github.io/open-api/) for the full details on any request or response.
-
-## Next Steps
-
-- [Quick Start: cURL](./quick-start-curl.md)
-- [Getting data: Node.js](./getting-data/nodejs.md)
-
-## Other Resources
-
-- [Endpoint references](https://cc-libraries-api.github.io/open-api/)
