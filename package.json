@@ -5,14 +5,10 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AdobeDocs/gatsby-theme-parliament-documentation"
-  },
-  "author": {
-    "name": "Stephan Ringel",
-    "url": "https://github.com/icaraps"
+    "url": "https://github.com/AdobeDocs/cc-libraries-api"
   },
   "dependencies": {
-    "@adobe/gatsby-theme-parliament": "^2.11.1",
+    "@adobe/gatsby-theme-aio": "^2.13.4",
     "gatsby": "^2.24.74",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
