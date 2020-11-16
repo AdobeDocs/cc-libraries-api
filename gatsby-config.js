@@ -132,6 +132,24 @@ module.exports = {
         ],
       },
       {
+        title: "References",
+        path: "/integrate/references/",
+        pages: [
+          {
+            title: "Event Properties",
+            path: "/integrate/references/event-properties/",
+          },
+          {
+            title: "Sample Event",
+            path: "/integrate/references/sample-event",
+          },
+          {
+            title: "Glossary",
+            path: "/integrate/references/glossary",
+          },
+        ],
+      },
+      {
         title: "Go live",
         path: "/go-live/",
         pages: [
