@@ -1,6 +1,6 @@
 <DiscoverBlock slots="heading, link, text"/>
 
-## Guides
+### Guides
 
 [Working with Library elements](./working-with-elements/)
 

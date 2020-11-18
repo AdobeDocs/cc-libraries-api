@@ -136,7 +136,11 @@ module.exports = {
         path: "/integrate/references/",
         pages: [
           {
-            title: "Event Properties",
+            title: "API Reference",
+            path: "/api/"
+          },
+          {
+            title: "I/O Events Properties",
             path: "/integrate/references/event-properties/",
           },
           {
@@ -146,7 +150,7 @@ module.exports = {
           {
             title: "Glossary",
             path: "/integrate/references/glossary",
-          },
+          }
         ],
       },
       {

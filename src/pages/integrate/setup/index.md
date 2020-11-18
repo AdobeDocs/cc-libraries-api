@@ -1,6 +1,6 @@
 <DiscoverBlock slots="heading, link, text"/>
 
-## Setup
+### Setup
 
 [How to get your developer credentials](developer-credentials/)
 
