@@ -4,7 +4,9 @@
 
 This page describes the properties of Creative Cloud Libraries events. For direction on subscribing to these events, see [Configuring Webhooks for Created Cloud Libraries Events](/integrate/guides/configuring-events-webhooks/).
 
-- **Note**: To see a sample event, [click here](/integrate/references/sample-event/index.json).
+<InlineAlert variant="info" slots="text"/>
+
+To see a sample event, [visit our samples repo on GitHub](https://github.com/AdobeDocs/cc-libraries-api-samples/blob/main/sample-events/cc-library-created.json).
 
 <br/>
 

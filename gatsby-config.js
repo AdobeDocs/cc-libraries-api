@@ -144,10 +144,6 @@ module.exports = {
             path: "/integrate/references/event-properties/",
           },
           {
-            title: "Sample Event",
-            path: "/integrate/references/sample-event",
-          },
-          {
             title: "Glossary",
             path: "/integrate/references/glossary",
           }
