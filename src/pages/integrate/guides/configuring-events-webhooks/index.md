@@ -44,7 +44,7 @@ This will create a local service that responds correctly to the I/O Events chall
 The next step is to make it available to the internet using ngrok. Open another terminal window in the location where ngrok was installed and run
 
 ```shell
- ./ngrock http 3000
+ ./ngrok http 3000
 ```
 
 That should result in an output that looks like this
