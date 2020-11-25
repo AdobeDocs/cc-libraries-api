@@ -104,6 +104,14 @@ The auth scopes your integration uses will determine the level of access the use
 
 Integrations asking for more access than necessary _at the time of submission_ will be rejected.
 
+The required scopes for Creative Cloud Libraries are:
+
+```
+openid,creative_sdk,profile,address,AdobeID,email,cc_files,cc_libraries
+```
+
+There is also an optional scope, `offline_access` which will provide a refresh token that can be used to generate an access token for up to 2 weeks after the user has logged in.
+
 ### Content
 
 Content within, and associated with, your integration with be reviewed.

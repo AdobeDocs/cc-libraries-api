@@ -27,7 +27,7 @@ Even during development, you'll need to include an access token with every API c
 On the [OAuth 2.0 Playground](https://adobeioruntime.net/api/v1/web/io-solutions/adobe-oauth-playground/oauth.html):
 
 1. Follow the steps on the OAuth 2.0 Playground's _Authorization_ tab.
-2. In the "Scopes" field, enter `openid,creative_sdk`.
+2. In the "Scopes" field, enter `openid,creative_sdk,profile,address,AdobeID,email,cc_files,cc_libraries`.
 
 On the [Adobe Developer Console](https://console.adobe.io):
 
