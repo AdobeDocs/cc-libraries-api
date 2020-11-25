@@ -86,7 +86,7 @@ As mentioned, in order to receive a user's events, the user needs to explicitly 
 
 _Note: When using OAuth to call APIs, an access token is generated and that access token is passed in the header to successfully call the API. In the case of Events, the access token isn't used. I/O Events registers the authorization and Events will be sent to the application until the user revokes their consent._
 
-To initiate the consent workflow, open a new browser window and browse to https://adobeioruntime.net/api/v1/web/io-solutions/adobe-oauth-playground/oauth.html. Find the integration's API key by selecting the "Credentials" item on the page confirming the Event Registration, copy the Client ID, and paste it in the API Key field of the OAuth Playground. Do the same for the client secret. In the "Scopes" field, add `creative_sdk` so that it reads `openid,creative_sdk` then press the "Generate Tokens" button.
+To initiate the consent workflow, open a new browser window and browse to https://adobeioruntime.net/api/v1/web/io-solutions/adobe-oauth-playground/oauth.html. Find the integration's API key by selecting the "Credentials" item on the page confirming the Event Registration, copy the Client ID, and paste it in the API Key field of the OAuth Playground. Do the same for the client secret. In the "Scopes" field, add `creative_sdk,profile,address,AdobeID,email,cc_files,cc_libraries` so that it reads `openid,creative_sdk,profile,address,AdobeID,email,cc_files,cc_libraries` then press the "Generate Tokens" button.
 
 The OAuth Playground will show an Adobe login screen. Login with a valid username and password and then hit "Allow Access" to allow the application to listen for events from the authorized account.
 
