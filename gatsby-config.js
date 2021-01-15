@@ -132,6 +132,24 @@ module.exports = {
         ],
       },
       {
+        title: "References",
+        path: "/integrate/references/",
+        pages: [
+          {
+            title: "API Reference",
+            path: "/api/"
+          },
+          {
+            title: "I/O Events Properties",
+            path: "/integrate/references/event-properties/",
+          },
+          {
+            title: "Glossary",
+            path: "/integrate/references/glossary",
+          }
+        ],
+      },
+      {
         title: "Go live",
         path: "/go-live/",
         pages: [

@@ -1,6 +1,6 @@
 <DiscoverBlock slots="heading, link, text"/>
 
-## Tutorials
+### Tutorials
 
 [Quick Start with cURL](quick-start-curl/)
 
