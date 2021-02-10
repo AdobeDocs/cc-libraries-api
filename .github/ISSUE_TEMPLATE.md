@@ -3,6 +3,6 @@
 
 Thank you for reporting an issue! For each issue you are reporting, please follow this template:
 
-**Repo file:** /src/pages/guides/uxp_guide/uxp-toolchain/index.md
-**Live page link (and page section):** https://www.adobe.io/photoshop/uxp/guides/uxp_guide/uxp-toolchain/#installing-the-tooling
+**Repo file:** /src/pages/guides/uxp_guide/uxp-toolchain/index.md  
+**Live page link (and page section):** https://www.adobe.io/photoshop/uxp/guides/uxp_guide/uxp-toolchain/#installing-the-tooling  
 **Issue description:** "UXP Toolchain" link is a 404.
