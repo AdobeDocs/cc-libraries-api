@@ -8,10 +8,8 @@
     "url": "https://github.com/AdobeDocs/cc-libraries-api"
   },
   "dependencies": {
-    "@adobe/gatsby-theme-aio": "^2.15.0",
-    "gatsby": "^2.24.74",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "@adobe/gatsby-theme-aio": "^3.0.0",
+    "gatsby": "^3.0.0"
   },
   "scripts": {
     "start": "gatsby build && gatsby serve",
