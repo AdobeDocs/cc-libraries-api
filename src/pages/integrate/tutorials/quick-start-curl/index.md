@@ -48,7 +48,7 @@ By starting with this basic cURL command, you'll have an idea of what's required
 
 ### 1. Create and run your cURL command
 
-In our [How to get your developer credentials](./how-to-get-your-developer-credentials.md) tutorial, we showed you how to get your Client ID and user access token.
+In our [How to get your developer credentials](../../setup/developer-credentials/index.md) tutorial, we showed you how to get your Client ID and user access token.
 
 You can take both of those values and add them to their respective headers (`-H`) below. Don't include the angle brackets (`< >`) in your command:
 
