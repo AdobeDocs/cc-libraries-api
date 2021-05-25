@@ -52,7 +52,7 @@ touch .env
 echo .env >> .gitignore # Don't track your .env file in version control
 ```
 
-In our [How to get your developer credentials](src/pages/integrate/setup/developer-credentials/index.md) tutorial, we showed you how to get your API key from the Adobe Developer Console and user access token from the OAuth 2.0 Playground. You can take both of those values and add them to their respective variables in the `.env` file as seen below. Don't include the angle brackets (`< >`) in your values:
+In our [How to get your developer credentials](../../setup/developer-credentials/index.md) tutorial, we showed you how to get your API key from the Adobe Developer Console and user access token from the OAuth 2.0 Playground. You can take both of those values and add them to their respective variables in the `.env` file as seen below. Don't include the angle brackets (`< >`) in your values:
 
 ```env
 API_KEY=<CLIENT_ID_HERE>
