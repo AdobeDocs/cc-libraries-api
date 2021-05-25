@@ -30,8 +30,8 @@ By starting with this basic Node.js script, you'll have an idea of what's requir
 
 **Tutorials**
 
-- [How to get your developer credentials](src/pages/integrate/setup/developer-credentials/index.md)
-- [How to get access tokens with OAuth](src/pages/integrate/setup/oauth/index.md)
+- [How to get your developer credentials](../../setup/developer-credentials/index.md)
+- [How to get access tokens with OAuth](../../setup/oauth/index.md)
 
 **Assets**
 
