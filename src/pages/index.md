@@ -21,7 +21,7 @@ Libraries are accessible across all of Adobe's tools and offer a powerful way to
 #### Resources
 
 - [Postman collection & raw API spec repo](https://github.com/AdobeDocs/cc-libraries-api-spec)
-- [Code samples repo](https://github.com/cc-libraries-api/code-samples)
+- [Code samples repo](https://github.com/AdobeDocs/cc-libraries-api-samples)
 - [Documentation repo](https://github.com/AdobeDocs/cc-libraries-api)
 
 <Overview />
