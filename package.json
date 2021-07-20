@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "cc-libraries-api",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
