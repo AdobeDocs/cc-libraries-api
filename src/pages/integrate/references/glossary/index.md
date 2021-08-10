@@ -1,3 +1,12 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - JavaScript
+  - CC Libraries API
+  - Creative Cloud Libraries API
+---
+
 # Glossary
 
 ### Asset

@@ -1,3 +1,12 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - JavaScript
+  - CC Libraries API
+  - Creative Cloud Libraries API
+---
+
 # Accessing Different File Formats with Representations
 
 An element in a Creative Cloud Library can include one or more formats that are accessed as _representations_ using the API. As an example, an XD Component can have three different representations; A static PNG file that provides a bitmap version of what the component looks like, an SVG file that has vector information about the component, and a JSON representation of the component that includes a variety of properties included in the component.

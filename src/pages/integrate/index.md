@@ -1,4 +1,10 @@
 ---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - JavaScript
+  - CC Libraries API
+  - Creative Cloud Libraries API
 title: Integrate—Creative Cloud Libraries API
 description: Learn how to build with the Creative Cloud Libraries API. Get quick starts, tutorials, endpoint references, sample code, and more.
 ---

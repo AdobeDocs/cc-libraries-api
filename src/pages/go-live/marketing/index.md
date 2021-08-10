@@ -1,4 +1,10 @@
 ---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - JavaScript
+  - CC Libraries API
+  - Creative Cloud Libraries API
 title: Marketing—Creative Cloud Libraries API
 description: Get the Adobe Developer Brand Guide for tips and guidelines on marketing your Creative Cloud Libraries integration.
 ---

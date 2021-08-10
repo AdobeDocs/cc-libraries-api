@@ -1,3 +1,12 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - JavaScript
+  - CC Libraries API
+  - Creative Cloud Libraries API
+---
+
 # Getting Library and Element Data
 
 Any integration with the Libraries API will involve reading information about a user's stored libraries and elements.

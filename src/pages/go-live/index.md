@@ -1,4 +1,10 @@
 ---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - JavaScript
+  - CC Libraries API
+  - Creative Cloud Libraries API
 title: Go Live—Creative Cloud Libraries API
 description: Take your Creative Cloud Libraries API integration to production. Learn about our review process and how to market your integration.
 ---

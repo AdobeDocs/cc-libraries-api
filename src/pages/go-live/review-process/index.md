@@ -1,4 +1,10 @@
 ---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - JavaScript
+  - CC Libraries API
+  - Creative Cloud Libraries API
 title: Submission and review—Creative Cloud Libraries API
 description: Ready to take your Creative Cloud Libraries API integration to production? Learn about our submission and review process.
 ---

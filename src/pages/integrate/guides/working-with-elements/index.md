@@ -1,3 +1,12 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - JavaScript
+  - CC Libraries API
+  - Creative Cloud Libraries API
+---
+
 # Introduction to Library Elements
 
 Creative Cloud Libraries are made up of elements which represent design ingredients.

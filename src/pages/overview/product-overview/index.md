@@ -1,3 +1,12 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - JavaScript
+  - CC Libraries API
+  - Creative Cloud Libraries API
+---
+
 # What are Creative Cloud Libraries?
 
 Before you start, it's worth quickly orienting yourself to [Creative Cloud Libraries](https://www.adobe.com/creativecloud/libraries.html).
