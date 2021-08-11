@@ -1,3 +1,12 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - JavaScript
+  - CC Libraries API
+  - Creative Cloud Libraries API
+---
+
 # Quick Start: cURL
 
 Welcome to the Creative Cloud Libraries API!

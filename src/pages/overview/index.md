@@ -1,4 +1,10 @@
 ---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - JavaScript
+  - CC Libraries API
+  - Creative Cloud Libraries API
 title: Overview—Creative Cloud Libraries API
 description: Learn about Creative Cloud Libraries and how customers use Libraries. Then jump into building your own API integration.
 ---

@@ -1,4 +1,10 @@
 ---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - JavaScript
+  - CC Libraries API
+  - Creative Cloud Libraries API
 title: Community—Creative Cloud Libraries API
 description: Join the worldwide developer community building integrations to empower creativity. Meet other developers, ask questions, offer help.
 ---

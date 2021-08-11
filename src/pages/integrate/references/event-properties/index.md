@@ -1,3 +1,12 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - JavaScript
+  - CC Libraries API
+  - Creative Cloud Libraries API
+---
+
 # I/O Events Properties
 
 This page describes the properties of Creative Cloud Libraries events. For direction on subscribing to these events, see [Configuring Webhooks for Created Cloud Libraries Events](/integrate/guides/configuring-events-webhooks/).

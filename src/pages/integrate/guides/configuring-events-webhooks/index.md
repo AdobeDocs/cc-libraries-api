@@ -1,3 +1,12 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - JavaScript
+  - CC Libraries API
+  - Creative Cloud Libraries API
+---
+
 # Configuring Webhooks for Created Cloud Libraries Events
 
 I/O Events makes it possible to listen for changes to Creative Cloud Libraries and get a notification when those changes occur. Developers can subscribe to _create_, _delete_, and _update_ events for a user's Creative Cloud Libraries. This tutorial will walk through how to set up and configure your project to listen for Creative Cloud Libraries events.

@@ -1,3 +1,12 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - JavaScript
+  - CC Libraries API
+  - Creative Cloud Libraries API
+---
+
 # How to get your developer credentials
 
 Before using the Libraries API you'll need to get your developer credentials.

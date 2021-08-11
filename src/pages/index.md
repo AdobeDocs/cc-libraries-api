@@ -1,4 +1,10 @@
 ---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - JavaScript
+  - CC Libraries API
+  - Creative Cloud Libraries API
 title: Documentation—Creative Cloud Libraries API
 description: Documentation top page for the Creative Cloud Libraries API. Get quick starts, tutorials, endpoint references, sample code, and more.
 ---
