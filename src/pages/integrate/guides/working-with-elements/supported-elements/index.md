@@ -64,7 +64,7 @@ things like PDFs, Word documents, etc. However, the most common types are:
 - if the primary representation is not a bitmap, a fullsize bitmap rendition that can be used for thumbnails
 - optionally, other renditions depending on what apps may consume the image
 
-### Example Payload
+### Example postLibraryElement Payload
 
 ```json
 {
@@ -143,7 +143,7 @@ The different color "types" are as follows - note that all colors require the pr
 - At least one RGB representation
 - optionally, other renditions
 
-### Example postLibraryElement Payload:
+### Example postLibraryElement Payload
 
 ```json
 {
@@ -552,26 +552,18 @@ Some frequently used styles:
 | whiteSpace          | Used to correspond to the noBreak property in Photoshop and Illustrator. Only supports the value "nowrap", other values are ignored.                                                                                                                                                                           | "nowrap"                                                                                                               |
 | adbeFont            | contains a Font object (see below)                                                                                                                                                                                                                                                                             | { "family": "Helvetica Neue", "name": "Helvetica Neue Bold", "postScriptName": "HelveticaNeue-Bold", "style": "Bold" } |
 
-Font object:
-| Property | Description |
-|----------|-------------|
-| name | |
-| family | |
-| postScriptName | |
-| style | |
-
 #### application/vnd.adobe.indesign-idms
 
 A character style may also be represented as an InDesign snippet.
 
-## Representation Requirements
+### Representation Requirements
 
 - A mandatory application/vnd.adobe.characterstyle+json representation, which may have the primary relationship,
   or the rendition relationship, in the case where an InDesign snippet is used as the primary.
 - Optionally, a primary representation of type application/vnd.adobe.indesign-idms, if the json representation is not primary.
 - A mandatory thumbnail rendition, e.g, of type "image/png".
 
-## Example postLibraryElement Payload
+### Example postLibraryElement Payload
 
 ```json
 {

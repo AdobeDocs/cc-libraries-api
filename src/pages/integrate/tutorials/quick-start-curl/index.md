@@ -42,8 +42,8 @@ By starting with this basic cURL command, you'll have an idea of what's required
 
 **Tutorials**
 
-- [How to get your developer credentials](./how-to-get-your-developer-credentials.md)
-- [How to get access tokens with OAuth](./tutorials/how-to-get-access-tokens-with-oauth.md)
+- [How to get your developer credentials](../../setup/developer-credentials/index.md)
+- [How to get access tokens with OAuth](../../setup/oauth/index.md)
 
 **Assets**
 
@@ -53,7 +53,7 @@ By starting with this basic cURL command, you'll have an idea of what's required
 ## Development Steps
 
 > **Info**
-> Complete code for this plugin can be found [on GitHub](https://github.com/cc-libraries-api/code-samples/tree/master/quick-start-curl).
+> Complete code for this plugin can be found [on GitHub](https://github.com/AdobeDocs/cc-libraries-api-samples/tree/main/quick-start-curl).
 
 ### 1. Create and run your cURL command
 

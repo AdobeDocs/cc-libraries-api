@@ -44,6 +44,10 @@ Visit the [Adobe Developer Console](https://console.adobe.io/) and log in with y
 
 ### Add an authentication method to your project
 
+Regardless of which authentication workflow you choose to implement for your project, the [scopes](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/Scopes.md) required for access to CC Libraries are: 
+`openid,creative_sdk,profile,address,AdobeID,email,cc_files,cc_libraries`.
+Make sure the scopes you provide exist in this same comma-delimited (and no spaces) string format. 
+
 1. Select your authentication method (most projects will use OAuth 2.0 Web).
 2. Enter a Redirect URI and Redirect URI Pattern. This is the URL that your users will be redirected to after they log in.
 
@@ -56,7 +60,7 @@ Visit the [Adobe Developer Console](https://console.adobe.io/) and log in with y
 
 3. When finished, click "Save configured API".
 
-Now you have access to your Client ID and Secret.
+Now you have access to your Client ID and Secret. 
 
 <InlineAlert variant="info" slots="text"/>
 
