@@ -94,9 +94,9 @@ module.exports = {
             path: "/integrate/guides/working-with-elements/",
             pages: [
               {
-                title: "Supported elements",
+                title: "Creating elements",
                 path:
-                  "/integrate/guides/working-with-elements/supported-elements/",
+                  "/integrate/guides/working-with-elements/creating-elements/",
               },
               {
                 title: "Accessing file formats",
@@ -104,9 +104,9 @@ module.exports = {
                   "/integrate/guides/working-with-elements/accessing-file-formats/",
               },
               {
-                title: "Creating elements",
+                title: "Supported elements",
                 path:
-                  "/integrate/guides/working-with-elements/creating-elements/",
+                  "/integrate/guides/working-with-elements/supported-elements/",
               },
               {
                 title: "Element validations",

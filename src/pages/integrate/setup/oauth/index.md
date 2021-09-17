@@ -23,9 +23,8 @@ Details on both options are provided in this document.
 
 ## Adobe OAuth 2.0
 
-You can find more infomation about Adobe OAuth 2.0 in Adobe's [OAuth 2.0 Authentication and Authorization](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md) documentation.
-
-We also offer a basic [OAuth implementation example](https://github.com/cc-libraries-api/code-samples/tree/master/oauth) as part of our body of sample code.
+You can find more infomation about Adobe OAuth 2.0 in Adobe's [Authentication](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/AuthenticationGuide.md) documentation.
+We also offer a basic [OAuth implementation example](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/samples/samples.md) as part of our body of sample code.
 
 ## OAuth 2.0 Playground
 

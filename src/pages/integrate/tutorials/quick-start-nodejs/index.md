@@ -50,7 +50,7 @@ By starting with this basic Node.js script, you'll have an idea of what's requir
 ## Development Steps
 
 > **Info**
-> Complete code for this plugin can be found [on GitHub](https://github.com/cc-libraries-api/code-samples/tree/master/quick-start-nodejs).
+> Complete code for this plugin can be found [on GitHub](https://github.com/AdobeDocs/cc-libraries-api-samples/tree/main/quick-start-nodejs).
 
 ### 1. Set up your environment variables
 

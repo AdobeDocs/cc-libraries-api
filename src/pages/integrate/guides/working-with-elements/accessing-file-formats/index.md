@@ -15,7 +15,7 @@ Representations are added when an element is created and can be added/modified l
 
 ## Getting Thumbnails and Full Resolution PNGs using Renditions
 
-Separate from `representations`, all graphical elements in a Library include a static PNG `rendition` that is created when the element is added. This `rendition` can be an easy way to get PNG of an graphical element that doesn't require the use of renditions. 
+Separate from `representations`, all graphical elements in a Library include a static PNG `rendition` that is created when the element is added. This `rendition` can be an easy way to get PNG of an graphical element that doesn't require the use of representations. 
 
 Each Library Element includes a `thumbnail` property which has a `rendition` link that can be used to access the static PNG for an element. It looks something like this:
 
