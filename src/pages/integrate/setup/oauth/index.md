@@ -19,7 +19,7 @@ Details on both options are provided in this document.
 
 ## Prerequisite
 
-- [How to get your developer credentials](./how-to-get-your-developer-credentials.md)
+- [How to get your developer credentials](../developer-credentials/index.md)
 
 ## Adobe OAuth 2.0
 
