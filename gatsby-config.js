@@ -12,6 +12,10 @@
 
 module.exports = {
   siteMetadata: {
+    home: {
+      title: "Creative Cloud Libraries",
+      path: "/creative-cloud-libraries"
+    },
     pages: [
       {
         title: "Creative Cloud Libraries API",
