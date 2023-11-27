@@ -21,13 +21,13 @@ With your developer credentials in hand, you'll be ready to start making API cal
 
 ## Set up your Adobe Developer Console project
 
-Visit the [Adobe Developer Console](https://console.adobe.io/) and log in with your Adobe ID (or create a free Adobe ID if you don't already have one). From there you can follow the steps in the following sections to get your developer credentials.
+Visit the [Adobe Developer Console](https://console.adobe.io/) and log in with your Adobe ID (or create a free Adobe ID if you don't already have one). You can follow the steps in the following sections to get your developer credentials.
 
 ### Create your project
 
 **For new projects** on the Adobe Developer Console:
 
-1. After logging in, click the "Create new project" button under the Quick Start section. This will automatically create a blank project for you.
+1. After logging in, click "Create new project" button under the Quick Start section. This will automatically create a blank project for you.
 2. Once the project is created, click "Edit project" to change the name and give it a description.
 3. Follow the steps in the "Add an API" section just below.
 
